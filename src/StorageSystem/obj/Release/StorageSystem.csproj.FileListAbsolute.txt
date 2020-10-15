@@ -1,0 +1,7 @@
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\StorageSystem.dll
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\StorageSystem.pdb
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem\obj\Release\StorageSystem.csprojAssemblyReference.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem\obj\Release\StorageSystem.csproj.CoreCompileInputs.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem\obj\Release\StorageSystem.csproj.CopyComplete
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem\obj\Release\StorageSystem.dll
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem\obj\Release\StorageSystem.pdb

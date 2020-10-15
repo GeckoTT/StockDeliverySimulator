@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FD6B0A8-C368-4339-88DB-4906037D02BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MosaicDependency</RootNamespace>
+    <AssemblyName>MosaicDependency</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\AnyCPU\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\AnyCPU\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="RowaLog, Version=1.4.0.0, Culture=neutral, PublicKeyToken=06a71671f7455744, processorArchitecture=MSIL">
+      <HintPath>..\packages\RowaLog.1.4.0\lib\net40\RowaLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.109.2\lib\net451\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.109.0\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.109.0\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\ComponentType.cs" />
+    <Compile Include="Components\IComponent.cs" />
+    <Compile Include="Components\IComponentConfiguration.cs" />
+    <Compile Include="Connectors\Tcp\TcpConnection.cs" />
+    <Compile Include="Connectors\Tcp\TcpInConnector.cs" />
+    <Compile Include="Connectors\Tcp\TcpInConnectorConfiguration.cs" />
+    <Compile Include="Connectors\Tcp\TcpOutConnector.cs" />
+    <Compile Include="Connectors\Tcp\TcpOutConnectorConfiguration.cs" />
+    <Compile Include="Convertors\ByteArrayExtensions.cs" />
+    <Compile Include="Convertors\IMessageConversion.cs" />
+    <Compile Include="Convertors\TextConverter.cs" />
+    <Compile Include="Convertors\TypeConverter.cs" />
+    <Compile Include="Convertors\Utils.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\ArticleInformation\ArticleInfoRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\ArticleInformation\ArticleInfoResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\ArticleInformation\ArticlePriceRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\ArticleInformation\ArticlePriceResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Configuration\ConfigurationGetRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Configuration\ConfigurationGetResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\EnvelopeBase.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Hello\HelloRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Hello\HelloResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Input\InitiateInputMessage.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Input\InitiateInputRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Input\InitiateInputResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Input\InputMessage.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Input\InputRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Input\InputResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\KeepAlive\KeepAliveRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\KeepAlive\KeepAliveResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\MessageBase.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\MessageId.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Output\OutputMessage.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Output\OutputRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Output\OutputResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Sales\ArticleSelectedMessage.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Sales\ShoppingCartRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Sales\ShoppingCartResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Sales\ShoppingCartUpdateMessage.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Sales\ShoppingCartUpdateRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Sales\ShoppingCartUpdateResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Status\StatusRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Status\StatusResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\ArticleMasterSetRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\ArticleMasterSetResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\StockDeliverySetRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\StockDeliverySetResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\StockInfoMessage.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\StockInfoRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\StockInfoResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\StockLocationInfoRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Stock\StockLocationInfoResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Task\TaskCancelRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Task\TaskCancelResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Task\TaskInfoRequest.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Task\TaskInfoResponse.cs" />
+    <Compile Include="Convertors\Wwks.2\Messages\Unprocessed\UnprocessedMessage.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Article.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Box.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Capability.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Component.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Criteria.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Details.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Error.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Handling.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Label.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Message.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Pack.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\PackState.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\PriceInformation.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\ProductCode.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\SetResult.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\ShoppingCart.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\ShoppingCartItem.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\StockDelivery.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\StockLocation.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Subscriber.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Tag.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\Task.cs" />
+    <Compile Include="Convertors\Wwks.2\Types\UpdateResult.cs" />
+    <Compile Include="Convertors\Wwks.2\WwksConverter.cs" />
+    <Compile Include="Convertors\Wwks.2\WwksConverterConfiguration.cs" />
+    <Compile Include="Convertors\Wwks.2\WwksConverterStream.cs" />
+    <Compile Include="Convertors\XmlMessageStream.cs" />
+    <Compile Include="Convertors\XmlObjectStream.cs" />
+    <Compile Include="Core\Components\ComponentLoader.cs" />
+    <Compile Include="Core\Components\TaskScheduler.cs" />
+    <Compile Include="Core\Environment\Ups\SerialPortDevice.cs" />
+    <Compile Include="Core\Environment\Ups\SerialUps.cs" />
+    <Compile Include="Core\Environment\Ups\SystemUps.cs" />
+    <Compile Include="Core\Environment\Ups\UpsStatus.cs" />
+    <Compile Include="Core\Environment\Ups\UpsWorker.cs" />
+    <Compile Include="DB\CommandFilterNestedQuery.cs" />
+    <Compile Include="DB\CommandFilterPISArticlesAscLookup.cs" />
+    <Compile Include="DB\CommandFilterPISArticlesDescLookup.cs" />
+    <Compile Include="DB\CommandMultiFilter.cs" />
+    <Compile Include="Framework.cs" />
+    <Compile Include="InstallUtil.cs" />
+    <Compile Include="Interfaces\Connectors\ConnectionCategory.cs" />
+    <Compile Include="Interfaces\Connectors\IConnection.cs" />
+    <Compile Include="Interfaces\Connectors\IConnector.cs" />
+    <Compile Include="Interfaces\Connectors\IInboundConnector.cs" />
+    <Compile Include="Interfaces\Connectors\IOutboundConnector.cs" />
+    <Compile Include="Interfaces\Converters\IConverter.cs" />
+    <Compile Include="Interfaces\Converters\IConverterStream.cs" />
+    <Compile Include="Core\Environment\Directories.cs" />
+    <Compile Include="Core\Logging\ApplicationLog.cs" />
+    <Compile Include="Core\Logging\LogExtensions.cs" />
+    <Compile Include="Core\Threading\AsyncEventProvider.cs" />
+    <Compile Include="Core\Threading\AsyncMethodCall.cs" />
+    <Compile Include="DB\CommandFilter.cs" />
+    <Compile Include="DB\CommandGroup.cs" />
+    <Compile Include="DB\CommandParameter.cs" />
+    <Compile Include="DB\ComparisonType.cs" />
+    <Compile Include="DB\ConcatenationType.cs" />
+    <Compile Include="DB\Database.cs" />
+    <Compile Include="DB\DatabaseCaseInsensitiveCollation.cs" />
+    <Compile Include="DB\DatabaseLock.cs" />
+    <Compile Include="DB\DatabaseSet.cs" />
+    <Compile Include="DB\OrderingType.cs" />
+    <Compile Include="DB\QueryGroupFilter.cs" />
+    <Compile Include="DB\QueryLimitationFilter.cs" />
+    <Compile Include="DB\QueryOffsetFilter.cs" />
+    <Compile Include="DB\QueryOrderingFilter.cs" />
+    <Compile Include="DB\StockQuery.cs" />
+    <Compile Include="Interfaces\Messages\ArticleInformation\ArticleInfoRequest.cs" />
+    <Compile Include="Interfaces\Messages\ArticleInformation\ArticleInfoResponse.cs" />
+    <Compile Include="Interfaces\Messages\ArticleInformation\ArticlePriceRequest.cs" />
+    <Compile Include="Interfaces\Messages\ArticleInformation\ArticlePriceResponse.cs" />
+    <Compile Include="Interfaces\Messages\Configuration\ConfigurationGetRequest.cs" />
+    <Compile Include="Interfaces\Messages\Configuration\ConfigurationGetResponse.cs" />
+    <Compile Include="Interfaces\Messages\Configuration\ConveyorConfigGetRequest.cs" />
+    <Compile Include="Interfaces\Messages\Configuration\ConveyorConfigGetResponse.cs" />
+    <Compile Include="Interfaces\Messages\Configuration\InputConfigurationMessage.cs" />
+    <Compile Include="Interfaces\Messages\Configuration\InputConfigurationRequest.cs" />
+    <Compile Include="Interfaces\Messages\Configuration\InputConfigurationResponse.cs" />
+    <Compile Include="Interfaces\Messages\Legacy\CommandRequest.cs" />
+    <Compile Include="Interfaces\Messages\Print\LabelPrintMessage.cs" />
+    <Compile Include="Interfaces\Messages\Print\LabelPrintRequest.cs" />
+    <Compile Include="Interfaces\Messages\Print\LabelPrintResponse.cs" />
+    <Compile Include="Interfaces\Messages\Sales\ArticleSelectedMessage.cs" />
+    <Compile Include="Interfaces\Messages\Sales\ShoppingCartRequest.cs" />
+    <Compile Include="Interfaces\Messages\Sales\ShoppingCartResponse.cs" />
+    <Compile Include="Interfaces\Messages\Sales\ShoppingCartUpdateMessage.cs" />
+    <Compile Include="Interfaces\Messages\Sales\ShoppingCartUpdateRequest.cs" />
+    <Compile Include="Interfaces\Messages\Sales\ShoppingCartUpdateResponse.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemCommand.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemCommandResult.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemConfigRequest.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemConfigResponse.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemManualOrderMessage.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemOrderComplete.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemOrderRequest.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemOrderResponse.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemOutputDetail.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemPack.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemStatusRequest.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemStatusResponse.cs" />
+    <Compile Include="Interfaces\Messages\TransportSystem\TransportSystemTransferPointStatus.cs" />
+    <Compile Include="Interfaces\Messages\Unprocessed\UnprocessedMessage.cs" />
+    <Compile Include="Interfaces\Scheduler\ISchedulerTask.cs" />
+    <Compile Include="Interfaces\Types\Articles\ArticleTree.cs" />
+    <Compile Include="Interfaces\Types\Articles\PisArticle.cs" />
+    <Compile Include="Interfaces\Types\Articles\PisArticleAttribute.cs" />
+    <Compile Include="Interfaces\Types\Articles\PisArticleScanCode.cs" />
+    <Compile Include="Interfaces\Types\Configuration\ConveyorSystem.cs" />
+    <Compile Include="Interfaces\Types\Configuration\ConveyorType.cs" />
+    <Compile Include="Interfaces\Types\Configuration\HandoverPoint.cs" />
+    <Compile Include="Interfaces\Types\Configuration\InputPoint.cs" />
+    <Compile Include="Interfaces\Types\Configuration\InputSource.cs" />
+    <Compile Include="Interfaces\Types\Configuration\Output.cs" />
+    <Compile Include="Interfaces\Messages\Input\EndStockDeliveryRequest.cs" />
+    <Compile Include="Interfaces\Messages\Input\InitiateStockInputMessage.cs" />
+    <Compile Include="Interfaces\Messages\Input\InitiateStockInputRequest.cs" />
+    <Compile Include="Interfaces\Messages\Input\InitiateStockInputResponse.cs" />
+    <Compile Include="Interfaces\Messages\Input\InitiateStockInputState.cs" />
+    <Compile Include="Interfaces\Messages\Input\StartEndStockDeliveryResponse.cs" />
+    <Compile Include="Interfaces\Messages\Input\StartStockDeliveryRequest.cs" />
+    <Compile Include="Interfaces\Messages\Input\StockInputError.cs" />
+    <Compile Include="Interfaces\Messages\Input\StockInputErrorType.cs" />
+    <Compile Include="Interfaces\Messages\Input\StockInputHandling.cs" />
+    <Compile Include="Interfaces\Messages\Input\StockInputHandlingType.cs" />
+    <Compile Include="Interfaces\Messages\Input\StockInputMessage.cs" />
+    <Compile Include="Interfaces\Messages\Input\StockInputRequest.cs" />
+    <Compile Include="Interfaces\Messages\Input\StockInputResponse.cs" />
+    <Compile Include="Interfaces\Messages\MessageType.cs" />
+    <Compile Include="Interfaces\Messages\MosaicMessage.cs" />
+    <Compile Include="Interfaces\Messages\Output\StockOutputMessage.cs" />
+    <Compile Include="Interfaces\Messages\Output\StockOutputRequest.cs" />
+    <Compile Include="Interfaces\Messages\Output\StockOutputResponse.cs" />
+    <Compile Include="Interfaces\Messages\Status\StatusComponent.cs" />
+    <Compile Include="Interfaces\Messages\Status\StatusMessage.cs" />
+    <Compile Include="Interfaces\Messages\Status\StatusRequest.cs" />
+    <Compile Include="Interfaces\Messages\Status\StatusResponse.cs" />
+    <Compile Include="Interfaces\Messages\Status\StatusType.cs" />
+    <Compile Include="Interfaces\Messages\Stock\ArticleInfoRequest.cs" />
+    <Compile Include="Interfaces\Messages\Stock\ArticleInfoResponse.cs" />
+    <Compile Include="Interfaces\Messages\Stock\ArticleMasterSetRequest.cs" />
+    <Compile Include="Interfaces\Messages\Stock\ArticleMasterSetResponse.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockDeliverySetRequest.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockDeliverySetResponse.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockInfoCriteria.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockInfoMessage.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockInfoRequest.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockInfoResponse.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockLocationInfoRequest.cs" />
+    <Compile Include="Interfaces\Messages\Stock\StockLocationInfoResponse.cs" />
+    <Compile Include="Interfaces\Messages\Task\Task.cs" />
+    <Compile Include="Interfaces\Messages\Task\TaskCancelRequest.cs" />
+    <Compile Include="Interfaces\Messages\Task\TaskCancelResponse.cs" />
+    <Compile Include="Interfaces\Messages\Task\TaskInfoRequest.cs" />
+    <Compile Include="Interfaces\Messages\Task\TaskInfoResponse.cs" />
+    <Compile Include="Interfaces\Messages\Task\TaskState.cs" />
+    <Compile Include="Interfaces\Messages\Task\TaskType.cs" />
+    <Compile Include="Native\Advapi32.cs" />
+    <Compile Include="Native\Kernel32.cs" />
+    <Compile Include="Native\Mpr.cs" />
+    <Compile Include="Native\Shell32.cs" />
+    <Compile Include="Native\User32.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\Types\Articles\Article.cs" />
+    <Compile Include="Interfaces\Types\Articles\ArticleMaxSubItemQuantity.cs" />
+    <Compile Include="Interfaces\Types\Articles\GuiArticle.cs" />
+    <Compile Include="Interfaces\Types\Articles\MasterArticle.cs" />
+    <Compile Include="Interfaces\Types\Components\Component.cs" />
+    <Compile Include="Interfaces\Types\Components\ConfigurationValue.cs" />
+    <Compile Include="Interfaces\Types\Database\IDatabaseType.cs" />
+    <Compile Include="Interfaces\Types\Input\StockDelivery.cs" />
+    <Compile Include="Interfaces\Types\Input\StockDeliveryItem.cs" />
+    <Compile Include="Interfaces\Types\Input\StockDeliveryItemPack.cs" />
+    <Compile Include="Interfaces\Types\Input\StockDeliveryPriority.cs" />
+    <Compile Include="Interfaces\Types\Input\StockDeliveryState.cs" />
+    <Compile Include="Interfaces\Types\Output\StockOutputOrder.cs" />
+    <Compile Include="Interfaces\Types\Output\StockOutputOrderItem.cs" />
+    <Compile Include="Interfaces\Types\Output\StockOutputOrderItemLabel.cs" />
+    <Compile Include="Interfaces\Types\Output\StockOutputOrderItemPack.cs" />
+    <Compile Include="Interfaces\Types\Output\StockOutputOrderItemPackLabelState.cs" />
+    <Compile Include="Interfaces\Types\Output\StockOutputOrderState.cs" />
+    <Compile Include="Interfaces\Types\Packs\GuiPack.cs" />
+    <Compile Include="Interfaces\Types\Packs\Pack.cs" />
+    <Compile Include="Interfaces\Types\Packs\PackAndArticle.cs" />
+    <Compile Include="Interfaces\Types\Packs\PackShape.cs" />
+    <Compile Include="Interfaces\Types\Stock\StockLocation.cs" />
+    <Compile Include="Interfaces\Types\Stock\Tenant.cs" />
+    <Compile Include="WwiLogIntercept.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\Migration\HMIG10.sql" />
+    <Content Include="DB\Migration\HMIG2.sql" />
+    <Content Include="DB\Migration\HMIG3.sql" />
+    <Content Include="DB\Migration\HMIG4.sql" />
+    <Content Include="DB\Migration\HMIG5.sql" />
+    <Content Include="DB\Migration\HMIG6.sql" />
+    <Content Include="DB\Migration\HMIG7.sql" />
+    <Content Include="DB\Migration\HMIG8.sql" />
+    <Content Include="DB\Migration\HMIG9.sql" />
+    <Content Include="DB\Migration\PMIG10.sql" />
+    <Content Include="DB\Migration\PMIG11.sql" />
+    <Content Include="DB\Migration\PMIG12.sql" />
+    <Content Include="DB\Migration\PMIG13.sql" />
+    <Content Include="DB\Migration\PMIG14.sql" />
+    <Content Include="DB\Migration\PMIG15.sql" />
+    <Content Include="DB\Migration\PMIG2.sql" />
+    <Content Include="DB\Migration\PMIG3.sql" />
+    <Content Include="DB\Migration\PMIG4.sql" />
+    <Content Include="DB\Migration\PMIG5.sql" />
+    <Content Include="DB\Migration\PMIG6.sql" />
+    <Content Include="DB\Migration\PMIG7.sql" />
+    <Content Include="DB\Migration\PMIG8.sql" />
+    <Content Include="DB\Migration\PMIG9.sql" />
+    <Content Include="DB\Migration\SMIG1.sql" />
+    <Content Include="DB\Schema\H01-DatabaseSettings.sql" />
+    <Content Include="DB\Schema\H05-StockOutputOrders.sql" />
+    <Content Include="DB\Schema\H06-StockDelivery.sql" />
+    <Content Include="DB\Schema\P01-DatabaseSettings.sql" />
+    <Content Include="DB\Schema\P02-Components.sql" />
+    <Content Include="DB\Schema\P03-Articles.sql" />
+    <Content Include="DB\Schema\P04-Packs.sql" />
+    <Content Include="DB\Schema\P05-StockOutputOrders.sql" />
+    <Content Include="DB\Schema\P06-StockDelivery.sql" />
+    <Content Include="DB\Schema\P07-Tenants.sql" />
+    <Content Include="DB\Schema\P08-StockLocations.sql" />
+    <Content Include="DB\Schema\P09-PacksAndArticles.sql" />
+    <Content Include="DB\Schema\P10-MasterArticles.sql" />
+    <Content Include="DB\Schema\P11-ArticleMaxSubItemQuantity.sql" />
+    <Content Include="DB\Schema\S01-DatabaseSettings.sql" />
+    <Content Include="DB\Schema\S02-GuiDataModel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StorageSystem.Versioning\StorageSystem.Versioning.csproj">
+      <Project>{84f930ff-37f2-48fa-a042-54e2330d05dd}</Project>
+      <Name>StorageSystem.Versioning</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

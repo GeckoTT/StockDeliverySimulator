@@ -1,0 +1,13 @@
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystemSimulator.exe.config
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystemSimulator.exe
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystemSimulator.pdb
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystem.Simulator.csprojAssemblyReference.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystemSimulator.AddStatusComponent.resources
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystemSimulator.FormMain.resources
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystemSimulator.FormSelectPackShape.resources
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystemSimulator.Properties.Resources.resources
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystem.Simulator.csproj.GenerateResource.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystem.Simulator.csproj.CoreCompileInputs.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystem.Simulator.csproj.CopyComplete
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystemSimulator.exe
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Simulator\obj\Debug\StorageSystemSimulator.pdb

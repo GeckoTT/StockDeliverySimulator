@@ -1,0 +1,8 @@
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystem.Sample.exe.config
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystem.Sample.exe
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystem.Sample.pdb
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Sample\obj\Debug\StorageSystem.Sample.csprojAssemblyReference.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Sample\obj\Debug\StorageSystem.Sample.csproj.CoreCompileInputs.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Sample\obj\Debug\StorageSystem.Sample.csproj.CopyComplete
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Sample\obj\Debug\StorageSystem.Sample.exe
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.Sample\obj\Debug\StorageSystem.Sample.pdb

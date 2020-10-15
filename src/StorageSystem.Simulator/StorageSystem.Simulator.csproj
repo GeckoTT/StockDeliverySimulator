@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39BF2699-0B89-4E4A-A2EC-B515A174639C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StorageSystemSimulator</RootNamespace>
+    <AssemblyName>StorageSystemSimulator</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\AnyCPU\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\AnyCPU\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CareFusionLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RowaLog, Version=1.4.0.0, Culture=neutral, PublicKeyToken=06a71671f7455744, processorArchitecture=MSIL">
+      <HintPath>..\packages\RowaLog.1.4.0\lib\net40\RowaLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStatusComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStatusComponent.Designer.cs">
+      <DependentUpon>AddStatusComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cores\SimulatorArticleInfoCore.cs" />
+    <Compile Include="Cores\SimulatorArticleMasterSetCore.cs" />
+    <Compile Include="Cores\SimulatorInputCore.cs" />
+    <Compile Include="Cores\SimulatorOutputCore.cs" />
+    <Compile Include="Cores\SimulatorRawXmlCore.cs" />
+    <Compile Include="Cores\SimulatorStatusCore.cs" />
+    <Compile Include="Cores\SimulatorStockDeliverySetCore.cs" />
+    <Compile Include="Cores\SimulatorStockInfoCore.cs" />
+    <Compile Include="Cores\SimulatorStockLocation.cs" />
+    <Compile Include="Cores\SimulatorTaskInfoCore.cs" />
+    <Compile Include="Cores\SimulatorTenant.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectPackShape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectPackShape.Designer.cs">
+      <DependentUpon>FormSelectPackShape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StorageSystemArticle.cs" />
+    <Compile Include="StorageSystemSerializer.cs" />
+    <Compile Include="StorageSystemSimulatorCore.cs" />
+    <Compile Include="StorageSystemStock.cs" />
+    <Compile Include="WwiLogger.cs" />
+    <EmbeddedResource Include="AddStatusComponent.resx">
+      <DependentUpon>AddStatusComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectPackShape.resx">
+      <DependentUpon>FormSelectPackShape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CareFusionLogo.ico" />
+    <Content Include="ChangeLog.txt" />
+    <Content Include="Image\CareFusionLogo.ico" />
+    <Content Include="OldHistory.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StorageSystem.MosaicDependency\StorageSystem.MosaicDependency.csproj">
+      <Project>{7fd6b0a8-c368-4339-88db-4906037d02ba}</Project>
+      <Name>StorageSystem.MosaicDependency</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StorageSystem.Versioning\StorageSystem.Versioning.csproj">
+      <Project>{84f930ff-37f2-48fa-a042-54e2330d05dd}</Project>
+      <Name>StorageSystem.Versioning</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

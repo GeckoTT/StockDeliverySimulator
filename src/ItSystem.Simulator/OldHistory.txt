@@ -1,0 +1,1903 @@
+Revision: 28199
+Author: thomas.reth
+Date: Montag, 14. Januar 2019 14:54:27
+Message:
+o AutoRelease
+   - Folder restructured
+----
+Deleted : /trunk/Projects/Mosaic/Dependencies/vlc-2.1.3-win64.exe
+Deleted : /trunk/Projects/Mosaic/Libraries/7za.exe
+Deleted : /trunk/Projects/Mosaic/Mosaic
+Deleted : /trunk/Projects/Mosaic/Mosaic.Audit
+Deleted : /trunk/Projects/Mosaic/Mosaic.Common
+Deleted : /trunk/Projects/Mosaic/Mosaic.ORM
+Deleted : /trunk/Projects/Mosaic/Mosaic.UnitTest
+Deleted : /trunk/Projects/Mosaic/Mosaic.Unittests
+Deleted : /trunk/Projects/Mosaic/Mosaic.sln
+Deleted : /trunk/Projects/Mosaic/MosaicGUIInterface
+Deleted : /trunk/Projects/Mosaic/Rowa.Mosaic.Notification
+Deleted : /trunk/Projects/Mosaic/Rowa.Mosaic.Remoting
+Deleted : /trunk/Projects/Mosaic/Rowa.Mosaic.Versioning
+Deleted : /trunk/Projects/Mosaic/Tools
+Added : /trunk/Projects/Mosaic/_deploy/7Zip
+Added : /trunk/Projects/Mosaic/_deploy/7Zip/7za.exe (Copy from path: /trunk/Projects/Mosaic/Libraries/7za.exe, Revision, 28198)
+Added : /trunk/Projects/Mosaic/_deploy/VLC
+Added : /trunk/Projects/Mosaic/_deploy/VLC/vlc-2.1.3-win64.exe (Copy from path: /trunk/Projects/Mosaic/Dependencies/vlc-2.1.3-win64.exe, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Mosaic (Copy from path: /trunk/Projects/Mosaic/Mosaic, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Mosaic.Audit (Copy from path: /trunk/Projects/Mosaic/Mosaic.Audit, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Mosaic.Common (Copy from path: /trunk/Projects/Mosaic/Mosaic.Common, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Mosaic.ORM (Copy from path: /trunk/Projects/Mosaic/Mosaic.ORM, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Mosaic.UnitTest (Copy from path: /trunk/Projects/Mosaic/Mosaic.UnitTest, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Mosaic.Unittests (Copy from path: /trunk/Projects/Mosaic/Mosaic.Unittests, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Mosaic.sln (Copy from path: /trunk/Projects/Mosaic/Mosaic.sln, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/MosaicGUIInterface (Copy from path: /trunk/Projects/Mosaic/MosaicGUIInterface, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Rowa.Mosaic.Notification (Copy from path: /trunk/Projects/Mosaic/Rowa.Mosaic.Notification, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Rowa.Mosaic.Remoting (Copy from path: /trunk/Projects/Mosaic/Rowa.Mosaic.Remoting, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Rowa.Mosaic.Versioning (Copy from path: /trunk/Projects/Mosaic/Rowa.Mosaic.Versioning, Revision, 28198)
+Added : /trunk/Projects/Mosaic/src/Tools (Copy from path: /trunk/Projects/Mosaic/Tools, Revision, 28198)
+
+Revision: 28179
+Author: thomas.reth
+Date: Freitag, 11. Januar 2019 13:07:16
+Message:
+o Debug folder deleted.
+
+----
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Debug
+
+Revision: 27907
+Author: calin.dumitru.cerghizan
+Date: Freitag, 14. Dezember 2018 09:55:37
+Message:
+Update StorageSystem.dll to version 2.0.0.18
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 27782
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 6. Dezember 2018 12:10:02
+Message:
+SW-1776: FIXED: Add "UnprocessedMessage" to WWKS2 protocol:
+	- The Message element within UnprocessedMessage should have only the message text and no Id, Source, Destination.
+	- The UnprocessedMessage is set to "1" if the initial message has no Id set.
+        - Updated StorageSystem.dll.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 27776
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 6. Dezember 2018 11:01:17
+Message:
+SW-1776: FIXED: Add "UnprocessedMessage" to WWKS2 protocol:
+	- The UnprocessedMessage should bot be answered;
+        - Updated StorageSystem.dll and RowaLog.dll.
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 27436
+Author: tabriz.atayi@bd.com
+Date: Freitag, 16. November 2018 15:01:35
+Message:
+StorageSystem dll is changed because  of SW-2906
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 27335
+Author: tabriz.atayi@bd.com
+Date: Montag, 12. November 2018 10:29:20
+Message:
+SW-2906:IT-System Simulator cannot load stock from robot
+Dlls are updated after changes in storage system.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 27313
+Author: tammam.koujan
+Date: Donnerstag, 8. November 2018 13:07:25
+Message:
+Merge from 18-12
+r27291
+SW-3052: Cannot load nor retrieve stock from the storage system using the IT system simulator. 
+
+----
+Modified : /trunk/Projects/Mosaic
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 27086
+Author: tammam.koujan
+Date: Dienstag, 23. Oktober 2018 13:15:01
+Message:
+Merge from 18-12
+Delete SQLite.Interop.dll from release folder, it causes to crash Mosaic 
+and Mosaic should get it from \x64 or \x86 folders.
+----
+Modified : /trunk/Projects/Mosaic
+Added : /trunk/Projects/Mosaic/.gitattributes
+Added : /trunk/Projects/Mosaic/.gitignore
+Modified : /trunk/Projects/Mosaic/Mosaic
+Modified : /trunk/Projects/Mosaic/Mosaic/Mosaic.csproj
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/Mosaic.Common.csproj.CopyComplete
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/Mosaic.Common.csproj.CoreCompileInputs.cache
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/Mosaic.Common.csproj.FileListAbsolute.txt
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/Mosaic.Common.csprojAssemblyReference.cache
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/Mosaic.Common.dll
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/Mosaic.Common.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/TempPE
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+Added : /trunk/Projects/Mosaic/Mosaic.Common/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+Added : /trunk/Projects/Mosaic/Mosaic.ORM/Mosaic.ORM.csproj.user
+Added : /trunk/Projects/Mosaic/Mosaic.ORM/obj/Debug
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/7za.exe
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/BoxSystem.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Castle.Core.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Castle.Core.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/ChangeLog.txt
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/DatToXml.exe
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/EntityFramework.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/EntityFramework.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Moq.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Moq.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Moq.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Mosaic.UnitTest.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Mosaic.UnitTest.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Mosaic.config
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Mosaic.exe
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Mosaic.exe.config
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Mosaic.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/PackConveyor.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.Audit.Data.Types.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.Audit.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.Audit.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.IdentityServer.Client.NET4.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.IdentityServer.Interfaces.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.IdentityServer.NET4.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.Lib.MosaicGui.Data.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.Lib.MosaicGui.Data.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.Lib.MosaicGui.Message.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Rowa.Lib.MosaicGui.Message.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/RowaLog.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/RowaPlc.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/SQLite.Interop.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Serilog.FullNetFx.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/Serilog.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/System.Data.SQLite.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/System.Data.SQLite.dll.config
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/System.Data.SQLite.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/System.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/System.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/bin/Release/vlc-2.1.3-win64.exe
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/Mosaic.UnitTest.csproj.CopyComplete
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/Mosaic.UnitTest.csproj.CoreCompileInputs.cache
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/Mosaic.UnitTest.csproj.FileListAbsolute.txt
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/Mosaic.UnitTest.csprojResolveAssemblyReference.cache
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/Mosaic.UnitTest.dll
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/Mosaic.UnitTest.pdb
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/TempPE
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+Added : /trunk/Projects/Mosaic/Mosaic.UnitTest/obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+Added : /trunk/Projects/Mosaic/Mosaic.sln.DotSettings.user
+Modified : /trunk/Projects/Mosaic/Release/BoxSystem.dll
+Modified : /trunk/Projects/Mosaic/Release/CamRecorder.exe
+Added : /trunk/Projects/Mosaic/Release/ChangeLog.txt
+Added : /trunk/Projects/Mosaic/Release/EntityFramework.SqlServer.dll
+Added : /trunk/Projects/Mosaic/Release/EntityFramework.SqlServer.xml
+Added : /trunk/Projects/Mosaic/Release/EntityFramework.dll
+Added : /trunk/Projects/Mosaic/Release/EntityFramework.xml
+Added : /trunk/Projects/Mosaic/Release/Mosaic.exe.config
+Modified : /trunk/Projects/Mosaic/Release/PackConveyor.dll
+Added : /trunk/Projects/Mosaic/Release/Rowa.Audit.Data.Types.dll
+Added : /trunk/Projects/Mosaic/Release/Rowa.Audit.dll
+Added : /trunk/Projects/Mosaic/Release/Rowa.Audit.pdb
+Added : /trunk/Projects/Mosaic/Release/Rowa.Lib.MosaicGui.Data.dll
+Added : /trunk/Projects/Mosaic/Release/Rowa.Lib.MosaicGui.Data.pdb
+Added : /trunk/Projects/Mosaic/Release/Rowa.Lib.MosaicGui.Message.dll
+Added : /trunk/Projects/Mosaic/Release/Rowa.Lib.MosaicGui.Message.pdb
+Added : /trunk/Projects/Mosaic/Release/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Release/RowaPlc.dll
+Deleted : /trunk/Projects/Mosaic/Release/SQLite.Interop.dll
+Added : /trunk/Projects/Mosaic/Release/System.Data.SQLite.EF6.dll
+Added : /trunk/Projects/Mosaic/Release/System.Data.SQLite.Linq.dll
+Added : /trunk/Projects/Mosaic/Release/System.Data.SQLite.dll.config
+Added : /trunk/Projects/Mosaic/Release/System.Data.SQLite.xml
+Added : /trunk/Projects/Mosaic/Release/vlc-2.1.3-win64.exe
+Added : /trunk/Projects/Mosaic/Release/x64
+Added : /trunk/Projects/Mosaic/Release/x64/SQLite.Interop.dll
+Added : /trunk/Projects/Mosaic/Release/x86
+Added : /trunk/Projects/Mosaic/Release/x86/SQLite.Interop.dll
+Added : /trunk/Projects/Mosaic/Rowa.Mosaic.Notification/bin
+Added : /trunk/Projects/Mosaic/Rowa.Mosaic.Notification/obj
+Added : /trunk/Projects/Mosaic/Rowa.Mosaic.Remoting/bin
+Added : /trunk/Projects/Mosaic/Rowa.Mosaic.Remoting/obj
+Added : /trunk/Projects/Mosaic/Rowa.Mosaic.Versioning/obj
+Added : /trunk/Projects/Mosaic/Tools/CamRecorder/CamRecorder/obj
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/.vs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Debug
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/ASL - Apache Software Foundation License.txt
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/CHANGELOG.md
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/Castle.Core.4.3.1.nupkg
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/LICENSE
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net35
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net35/Castle.Core.dll
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net35/Castle.Core.xml
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net40
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net40/Castle.Core.dll
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net40/Castle.Core.xml
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net45
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net45/Castle.Core.dll
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/net45/Castle.Core.xml
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/netstandard1.3
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/netstandard1.3/Castle.Core.dll
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/netstandard1.3/Castle.Core.xml
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/netstandard1.5
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/netstandard1.5/Castle.Core.dll
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/lib/netstandard1.5/Castle.Core.xml
+Added : /trunk/Projects/Mosaic/packages/Castle.Core.4.3.1/readme.txt
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/ASL - Apache Software Foundation License.txt
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/CHANGELOG.md
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/Castle.Windsor.4.1.0.nupkg
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/LICENSE
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/lib
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/lib/net45
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/lib/net45/Castle.Windsor.dll
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/lib/net45/Castle.Windsor.xml
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/lib/netstandard1.6
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/lib/netstandard1.6/Castle.Windsor.dll
+Added : /trunk/Projects/Mosaic/packages/Castle.Windsor.4.1.0/lib/netstandard1.6/Castle.Windsor.xml
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/EntityFramework.6.1.3.nupkg
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/content
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/content/App.config.transform
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/content/Web.config.transform
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net40
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net40/EntityFramework.SqlServer.dll
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net40/EntityFramework.SqlServer.xml
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net40/EntityFramework.dll
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net40/EntityFramework.xml
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net45
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.xml
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/lib/net45/EntityFramework.xml
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/EntityFramework.PowerShell.Utility.dll
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/EntityFramework.PowerShell.dll
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/EntityFramework.psd1
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/EntityFramework.psm1
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/about_EntityFramework.help.txt
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/init.ps1
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/install.ps1
+Added : /trunk/Projects/Mosaic/packages/EntityFramework.6.1.3/tools/migrate.exe
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/FluentValidation.6.2.1.0.nupkg
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/FluentValidation.XML
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/FluentValidation.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/FluentValidation.pdb
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/cs
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/cs/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/da
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/da/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/de
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/de/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/es
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/es/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/fa
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/fa/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/fi
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/fi/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/fr
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/fr/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/it
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/it/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/ko
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/ko/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/mk
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/mk/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/nl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/nl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/pl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/pl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/pt
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/pt/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/ru
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/ru/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/sv
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/sv/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/tr
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/tr/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/zh-CN
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/Net45/zh-CN/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/FluentValidation.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/FluentValidation.pdb
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/cs
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/cs/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/da
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/da/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/de
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/de/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/es
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/es/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/fa
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/fa/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/fi
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/fi/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/fr
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/fr/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/it
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/it/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/nl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/nl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/pl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/pl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/pt
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/pt/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/ru
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/ru/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/sv
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/sv/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/zh-CN
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net40+sl50+wp80+win8+wpa81/zh-CN/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/FluentValidation.XML
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/FluentValidation.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/FluentValidation.pdb
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/cs
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/cs/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/da
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/da/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/de
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/de/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/es
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/es/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/fa
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/fa/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/fi
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/fi/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/fr
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/fr/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/it
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/it/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/nl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/nl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/pl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/pl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/pt
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/pt/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/ru
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/ru/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/sv
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/sv/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/zh-CN
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/portable-net45+wp80+win8+wpa81/zh-CN/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/FluentValidation.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/FluentValidation.pdb
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/cs
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/cs/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/da
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/da/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/de
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/de/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/es
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/es/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/fa
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/fa/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/fi
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/fi/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/fr
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/fr/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/it
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/it/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/nl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/nl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/pl
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/pl/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/pt
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/pt/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/ru
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/ru/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/sv
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/sv/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/zh-CN
+Added : /trunk/Projects/Mosaic/packages/FluentValidation.6.2.1.0/lib/uap10.0/zh-CN/FluentValidation.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/MSTest.TestAdapter.1.2.0.nupkg
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/cs
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/cs/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/cs/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/de
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/de/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/de/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/es
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/es/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/es/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/fr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/fr/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/fr/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/it
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/it/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/it/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ja
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ja/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ja/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ko
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ko/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ko/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pl
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pl/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pl/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pt
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pt/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pt/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ru
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ru/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ru/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/tr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/tr/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/tr/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hans
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hant
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/net45
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/net45/MSTest.TestAdapter.props
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/net45/MSTest.TestAdapter.targets
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/netcoreapp1.0
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/netcoreapp1.0/MSTest.TestAdapter.props
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/netcoreapp1.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/uap10.0
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/uap10.0/MSTest.TestAdapter.props
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/uap10.0/MSTest.TestAdapter.targets
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestAdapter.1.2.0/build/uap10.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/MSTest.TestFramework.1.2.0.nupkg
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.XML
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/cs
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/de
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/es
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/fr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/it
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ja
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ko
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/pl
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/pt
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ru
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/tr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/zh-Hans
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/zh-Hant
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/net45/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.XML
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/cs
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/de
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/es
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/fr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/it
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ja
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ko
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/pl
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/pt
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ru
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/tr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/zh-Hans
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/zh-Hant
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.XML
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/cs
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/de
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/es
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/fr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/it
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ja
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ko
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/pl
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/pt
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/pt/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ru
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/tr
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/zh-Hans
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/zh-Hant
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/MSTest.TestFramework.1.2.0/lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/License-Stable.rtf
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/Microsoft.Bcl.1.1.10.nupkg
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/Xamarin.iOS10
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/Xamarin.iOS10/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/monoandroid
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/monoandroid/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/monotouch
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/monotouch/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net40/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net45
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/net45/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net45+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net45+win8+wp8+wpa81/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net45+win8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net45+win8+wpa81/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net451+win81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net451+win81/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net451+win81+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-net451+win81+wpa81/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-win81+wp81+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/portable-win81+wp81+wpa81/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl4-windowsphone71/ensureRedirect.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl5
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl5/System.IO.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl5/System.IO.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl5/System.Runtime.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl5/System.Runtime.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl5/System.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/sl5/System.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/win8
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/win8/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/wp8
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/wp8/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.1.1.10/lib/wpa81/_._
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/License-Stable.rtf
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/Microsoft.Bcl.Async.1.0.168.nupkg
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/net40
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/net40/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/net40/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/net40/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/net40/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net40+sl4+win8+wp71+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4-windowsphone71
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4-windowsphone71/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/sl4-windowsphone71/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/win8
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/win8/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/win8/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/win8/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/win8/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wp8
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wp8/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wp8/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wp8/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wp8/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wpa81
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wpa81/Microsoft.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wpa81/Microsoft.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wpa81/Microsoft.Threading.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Async.1.0.168/lib/wpa81/Microsoft.Threading.Tasks.xml
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Build.1.0.21
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Build.1.0.21/License-Stable.rtf
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Build.1.0.21/Microsoft.Bcl.Build.1.0.21.nupkg
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Build.1.0.21/build
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Build.1.0.21/build/Microsoft.Bcl.Build.Tasks.dll
+Added : /trunk/Projects/Mosaic/packages/Microsoft.Bcl.Build.1.0.21/build/Microsoft.Bcl.Build.targets
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/Moq.4.8.2.nupkg
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/net45
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/net45/Moq.dll
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/net45/Moq.pdb
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/net45/Moq.xml
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/netstandard1.3
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/netstandard1.3/Moq.dll
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/netstandard1.3/Moq.pdb
+Added : /trunk/Projects/Mosaic/packages/Moq.4.8.2/lib/netstandard1.3/Moq.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/LICENSE.md
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/Newtonsoft.Json.11.0.2.nupkg
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net20
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net20/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net20/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net35
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net35/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net35/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net40
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net40/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net40/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net45
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard1.0
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard1.0/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard1.0/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard1.3
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard1.3/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard1.3/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard2.0
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/netstandard2.0/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/portable-net40+sl5+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/portable-net45+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll
+Added : /trunk/Projects/Mosaic/packages/Newtonsoft.Json.11.0.2/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/License.rtf
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/MSBuild
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/MSBuild/OpenCover.MSBuild.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/MSBuild/OpenCover.targets
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/OpenCover.4.6.519.nupkg
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/.nuget
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/.nuget/packages.config
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/Bom
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/Bom/Bom.csproj
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/Bom/BomManager.cs
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/Bom/Properties
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/Bom/Properties/AssemblyInfo.cs
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/BomSample.sln
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/BomTest
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/BomTest/BomManagerTests.cs
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/BomTest/BomTest.csproj
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/BomTest/Properties
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/BomTest/Properties/AssemblyInfo.cs
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/BomTest/packages.config
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/coverage.bat
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/packages
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/SampleSln/packages/repositories.config
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/Samples
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/Samples/x64
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/Samples/x64/OpenCover.Simple.Target.exe
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/Samples/x64/OpenCover.Simple.Target.pdb
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/Samples/x86
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/Samples/x86/OpenCover.Simple.Target.exe
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/Samples/x86/OpenCover.Simple.Target.pdb
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/docs
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/docs/ReleaseNotes.txt
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/docs/Usage.rtf
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/readme.txt
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/Autofac.Configuration.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/Autofac.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/CrashReporter.NET.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/Gendarme.Framework.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/Gendarme.Rules.Maintainability.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/Mono.Cecil.Mdb.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/Mono.Cecil.Pdb.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/Mono.Cecil.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/OpenCover.Console.exe
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/OpenCover.Console.exe.config
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/OpenCover.Console.pdb
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/OpenCover.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/OpenCover.Extensions.pdb
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/OpenCover.Framework.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/OpenCover.Framework.pdb
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/log4net.config
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/log4net.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/x64
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/x64/OpenCover.Profiler.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/x86
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/tools/x86/OpenCover.Profiler.dll
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/transform
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/transform/simple_report.xslt
+Added : /trunk/Projects/Mosaic/packages/OpenCover.4.6.519/transform/transform.ps1
+Added : /trunk/Projects/Mosaic/packages/PLCUpdateLib.1.0.3.1
+Added : /trunk/Projects/Mosaic/packages/PLCUpdateLib.1.0.3.1/PLCUpdateLib.1.0.3.1.nupkg
+Added : /trunk/Projects/Mosaic/packages/PLCUpdateLib.1.0.3.1/lib
+Added : /trunk/Projects/Mosaic/packages/PLCUpdateLib.1.0.3.1/lib/net40
+Added : /trunk/Projects/Mosaic/packages/PLCUpdateLib.1.0.3.1/lib/net40/PLCUpdateLib.dll
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/System.Threading.Tasks.Extensions.4.3.0.nupkg
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/ThirdPartyNotices.txt
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/dotnet_library_license.txt
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/lib
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/lib/netstandard1.0
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/lib/netstandard1.0/System.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/lib/netstandard1.0/System.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/lib/portable-net45+win8+wp8+wpa81
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll
+Added : /trunk/Projects/Mosaic/packages/System.Threading.Tasks.Extensions.4.3.0/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/LICENSE.TXT
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/System.ValueTuple.4.4.0.nupkg
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/THIRD-PARTY-NOTICES.TXT
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/MonoAndroid10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/MonoAndroid10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/MonoTouch10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/MonoTouch10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/net461
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/net461/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/net461/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/net47
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/net47/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/net47/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/netcoreapp2.0
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/netcoreapp2.0/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/netstandard1.0
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/netstandard1.0/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/netstandard1.0/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/netstandard2.0
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/netstandard2.0/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/portable-net40+sl4+win8+wp8
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarinios10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarinios10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarinmac20
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarinmac20/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarintvos10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarintvos10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarinwatchos10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/lib/xamarinwatchos10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/MonoAndroid10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/MonoAndroid10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/MonoTouch10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/MonoTouch10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/net461
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/net461/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/net461/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/net47
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/net47/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/net47/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/netcoreapp2.0
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/netcoreapp2.0/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/netstandard2.0
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/netstandard2.0/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/portable-net40+sl4+win8+wp8
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarinios10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarinios10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarinmac20
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarinmac20/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarintvos10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarintvos10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarinwatchos10
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/ref/xamarinwatchos10/_._
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/useSharedDesignerContext.txt
+Added : /trunk/Projects/Mosaic/packages/System.ValueTuple.4.4.0/version.txt
+
+Revision: 26626
+Author: tammam.koujan
+Date: Mittwoch, 19. September 2018 13:12:05
+Message:
+Solve compilation Warning messages.
+----
+Modified : /trunk/Projects/Mosaic/Mosaic.Audit/DataAuditor.cs
+Modified : /trunk/Projects/Mosaic/Mosaic.Audit/NullAuditor.cs
+Modified : /trunk/Projects/Mosaic/Mosaic.Audit/SimulationAuditor.cs
+Modified : /trunk/Projects/Mosaic/Mosaic.UnitTest/Mosaic.UnitTest.csproj
+Modified : /trunk/Projects/Mosaic/Mosaic.UnitTest/packages.config
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ConnectionManager.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 26602
+Author: sebastien.feltz
+Date: Dienstag, 18. September 2018 14:55:54
+Message:
+ITSystemSimulator:
+- SW-1766, SW-1767, SW-1769, SW-1770: Update Master Articles to new virtual article.
+- SW-1766, SW-1767, SW-1769, SW-1770: Update stock page to be able to search for virtual code
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/MasterArticleModel.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/StockModel.cs
+
+Revision: 26600
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 18. September 2018 13:51:28
+Message:
+Fixed the state of the button Connect properly.
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 26471
+Author: calin.dumitru.cerghizan
+Date: Freitag, 7. September 2018 10:45:59
+Message:
+SW-2370: WWKS2: ADAS defines Article.RequiresFridge attribute for InputResponse
+	- call method SetArticleInformation using the bool parameter requiresFridge set according to the check box Allow Input Only For Fridge;
+        - updated StorageSystem.dll.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ChangeLog.txt
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26248
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 22. August 2018 10:19:56
+Message:
+Updated StorageSystem library.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26244
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 22. August 2018 10:05:01
+Message:
+Updated StorageSystem library
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26232
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 21. August 2018 16:10:41
+Message:
+SW-1776: Add UnprocessedMessage to WWKS2 protocol
+    - updated StorageSystem.dll after fixing the appearance of CDATA content within Message XML element.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26221
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 21. August 2018 14:35:15
+Message:
+SW-1894: Add possibility to send raw XML in simulators
+    - updated StorageSystem.dll
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26214
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 21. August 2018 10:52:30
+Message:
+SW-1894 Add possibility to send raw XML in simulator:
+     - updated the StorageSystem.dll
+
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26190
+Author: calin.dumitru.cerghizan
+Date: Montag, 20. August 2018 09:21:37
+Message:
+SW-1894: Updated StorageSystem.dll
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26189
+Author: calin.dumitru.cerghizan
+Date: Montag, 20. August 2018 09:21:08
+Message:
+SW-1894: added posibility to send raw XML messages on Digital Shelf tab
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 26118
+Author: calin.dumitru.cerghizan
+Date: Montag, 13. August 2018 14:41:47
+Message:
+SW-1894: Updated ChangeLog file.
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ChangeLog.txt
+
+Revision: 26117
+Author: calin.dumitru.cerghizan
+Date: Montag, 13. August 2018 14:40:05
+Message:
+SW-1894: Add possibility to send raw XML in simulators
+    - created a new tab called Raw XML and add the functionality to send messages to Mosaic through Storage System lib.
+    - ToDo: add possibility to send raw XML into Storage System Simulator.
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 26116
+Author: calin.dumitru.cerghizan
+Date: Montag, 13. August 2018 14:36:21
+Message:
+SW-1894: Add possibility to send raw XML in simulators
+   - updated the StorageSystem.dll
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26093
+Author: sebastien.feltz
+Date: Freitag, 10. August 2018 14:15:36
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Release 1.0.32
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 26092
+Author: sebastien.feltz
+Date: Freitag, 10. August 2018 14:14:48
+Message:
+ITSystemSimulator:
+- Fix Lib update issue
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 26091
+Author: sebastien.feltz
+Date: Freitag, 10. August 2018 14:06:34
+Message:
+ITSystemSimulator:
+- Updated StorageSystem.dll to 2.0.0.15
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 26090
+Author: sebastien.feltz
+Date: Freitag, 10. August 2018 13:51:27
+Message:
+ITSystemSimulator:
+- SW-1766, SW-1767, SW-1769, SW-1770: Start working on Virtual Article rework. Input is updated, Stock page show Virtual ID.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/MasterArticleModel.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/StockModel.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/TaskModel.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator.sln
+
+Revision: 25914
+Author: calin.dumitru.cerghizan
+Date: Montag, 30. Juli 2018 12:45:54
+Message:
+SW-1820: Updated StorageSystem.dll within IT System Simulator.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 25913
+Author: calin.dumitru.cerghizan
+Date: Montag, 30. Juli 2018 12:45:08
+Message:
+SW-1820: Fix cast after updating StorageSystem library.
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 25897
+Author: calin.dumitru.cerghizan
+Date: Freitag, 27. Juli 2018 15:12:20
+Message:
+o SW-1797 - Updated RowaLog.dll and StorageSystem.dll
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 25896
+Author: calin.dumitru.cerghizan
+Date: Freitag, 27. Juli 2018 15:11:40
+Message:
+o SW-1797
+   - Articles from rejected shopping cart update requests will not appear anymore on it system simulator.
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ChangeLog.txt
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 25863
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 26. Juli 2018 08:23:53
+Message:
+SW-1530 : generate id to be assigned to ShoppingCart when is created within IT System Simulator.
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ChangeLog.txt
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 25812
+Author: sebastien.feltz
+Date: Freitag, 20. Juli 2018 13:39:29
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- SW-1726: Move Stock delivery 'sent' button back on the screen.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+
+Revision: 25765
+Author: thomas.reth
+Date: Mittwoch, 18. Juli 2018 08:59:25
+Message:
+- SW-1094: Some fields weren't forwarded properly
+- Update RowaLog to version 1.3.0.6
+- Added tools to Mosaic solution
+
+----
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Input/InitiateInputMessage.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Input/InitiateInputRequest.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Input/InitiateInputResponse.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Input/InputMessage.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Input/InputRequest.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Input/InputResponse.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Output/OutputMessage.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Output/OutputRequest.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Output/OutputResponse.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Stock/StockDeliverySetRequest.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Stock/StockInfoMessage.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Stock/StockInfoRequest.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Converters/Wwks.2/Messages/Stock/StockInfoResponse.cs
+Modified : /trunk/Projects/Mosaic/Mosaic/Interfaces/Messages/Stock/StockInfoCriteria.cs
+Modified : /trunk/Projects/Mosaic/Mosaic.sln
+Modified : /trunk/Projects/Mosaic/Rowa.Mosaic.Notification/Rowa.Mosaic.Notification.csproj
+Modified : /trunk/Projects/Mosaic/Rowa.Mosaic.Notification/packages.config
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+Added : /trunk/Projects/Mosaic/packages/RowaLog.1.3.0.6
+Added : /trunk/Projects/Mosaic/packages/RowaLog.1.3.0.6/RowaLog.1.3.0.6.nupkg
+Added : /trunk/Projects/Mosaic/packages/RowaLog.1.3.0.6/lib
+Added : /trunk/Projects/Mosaic/packages/RowaLog.1.3.0.6/lib/net40
+Added : /trunk/Projects/Mosaic/packages/RowaLog.1.3.0.6/lib/net40/RowaLog.dll
+
+Revision: 24945
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 23. Mai 2018 14:06:45
+Message:
+SW-293 Updated StorageSystem.dll used within IT System Simulator
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 24922
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 22. Mai 2018 10:50:04
+Message:
+SW-293 Updated the libraries RowaLog.dll and StorageSystem.dll used within IT System Simulator.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 24532
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 24. April 2018 09:20:49
+Message:
+SW-957: Updated IT System Simulator Libraries to the latest RowaLog.dll (from version 1.3.0.0 to version 1.3.0.1) and StorageSystem.dll
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 24527
+Author: calin.dumitru.cerghizan
+Date: Montag, 23. April 2018 16:03:34
+Message:
+SW-957: Updated IT System Simulator Libraries to the latest RowaLog.dll (version 1.3.0.0) and StorageSystem.dll
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 24408
+Author: calin.dumitru.cerghizan
+Date: Montag, 16. April 2018 09:59:14
+Message:
+SW-304: IT System Simulator: Show the boxes released for every order (the gridview is updated every time a box gets released).
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ChangeLog.txt
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/OrderModel.cs
+
+Revision: 24218
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 3. April 2018 10:19:41
+Message:
+SW-304: Commit the updated StorageSystem.dll within IT System Simulater Libraries folder of
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 24034
+Author: thomas.reth
+Date: Montag, 19. März 2018 13:54:42
+Message:
+- bug fix in error message
+- resize problem on Windows 10
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 23915
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 13. März 2018 11:11:13
+Message:
+#27219: Updated Libraries folder (ITSystemSimulator) with updated RowaLog.dll and StorageSystem.dll
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 23852
+Author: thomas.reth
+Date: Freitag, 9. März 2018 10:06:07
+Message:
+Change log created
+
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ChangeLog.txt
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+
+Revision: 23851
+Author: thomas.reth
+Date: Freitag, 9. März 2018 10:00:02
+Message:
+Release 1.0.31
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 23664
+Author: sebastien.feltz
+Date: Mittwoch, 28. Februar 2018 10:42:10
+Message:
+Projects/Mosaic:.
+- #27009: Update StorageSystem.dll to version 2.0.0.8
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 23660
+Author: sebastien.feltz
+Date: Dienstag, 27. Februar 2018 17:19:27
+Message:
+Projects/Mosaic:.
+- #27009: Update StorageSystem.dll to version 2.0.0.7
+- #27009: StorageSystem_StateChanged create an invoke call while the form is closing. add try/catch to hide the invoke exception.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ConnectionManager.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 23572
+Author: Calin Dumitru Cerghizan
+Date: Donnerstag, 22. Februar 2018 10:16:06
+Message:
+Set Dock property to "Fill" for both of the DataGridViews of the Stock tab of IT System Simulator
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+
+Revision: 23481
+Author: thomas.reth
+Date: Mittwoch, 14. Februar 2018 13:57:27
+Message:
+#26986
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 23480
+Author: thomas.reth
+Date: Mittwoch, 14. Februar 2018 13:57:02
+Message:
+Cleanup
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+
+Revision: 23474
+Author: thomas.reth
+Date: Mittwoch, 14. Februar 2018 10:39:26
+Message:
+Cleanup
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator.sln
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release
+
+Revision: 23232
+Author: sebastien.feltz
+Date: Montag, 29. Januar 2018 11:05:21
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Release 1.0.30 (add uncommited rowaLog.dll)
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/RowaLog.dll
+
+Revision: 23163
+Author: sebastien.feltz
+Date: Mittwoch, 24. Januar 2018 13:55:42
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Release 1.0.30
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/Properties/AssemblyInfo.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/StorageSystem.dll
+
+Revision: 23162
+Author: sebastien.feltz
+Date: Mittwoch, 24. Januar 2018 13:55:12
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Update Lib to 2.0.0.5
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 23060
+Author: thomas.reth
+Date: Freitag, 19. Januar 2018 11:13:23
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/StorageSystem.dll
+
+Revision: 23059
+Author: thomas.reth
+Date: Freitag, 19. Januar 2018 11:13:08
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 23058
+Author: thomas.reth
+Date: Freitag, 19. Januar 2018 11:12:48
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 23057
+Author: thomas.reth
+Date: Freitag, 19. Januar 2018 11:12:37
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+
+Revision: 23042
+Author: thomas.reth
+Date: Donnerstag, 18. Januar 2018 13:25:20
+Message:
+
+----
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/log4net.dll
+
+Revision: 23041
+Author: thomas.reth
+Date: Donnerstag, 18. Januar 2018 13:25:11
+Message:
+
+----
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/log4net.dll
+
+Revision: 23010
+Author: thomas.reth
+Date: Dienstag, 16. Januar 2018 10:09:57
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/StorageSystem.dll
+
+Revision: 22188
+Author: sebastien.feltz
+Date: Freitag, 27. Oktober 2017 10:16:12
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Missing file: allow to add ShoppingCartItem on ShoppingCartRequest
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+
+Revision: 22123
+Author: sebastien.feltz
+Date: Montag, 23. Oktober 2017 17:26:27
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- allow to add ShoppingCartItem on ShoppingCartRequest
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddShoppingCartItem.Designer.cs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddShoppingCartItem.cs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddShoppingCartItem.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+
+Revision: 21860
+Author: sebastien.feltz
+Date: Dienstag, 3. Oktober 2017 11:29:15
+Message:
+Projects/Mosaic:
+- #25739: Allow article price to be decimal.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 21859
+Author: sebastien.feltz
+Date: Dienstag, 3. Oktober 2017 11:18:26
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- StorageSystem.dll updated
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 21461
+Author: Svetlozar.Hadzhiev
+Date: Dienstag, 5. September 2017 13:02:28
+Message:
+Feature #23070  Implemented AutoConnect when the option is checked.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 21443
+Author: Svetlozar.Hadzhiev
+Date: Montag, 4. September 2017 17:16:02
+Message:
+Feature #23070  Implemented AutoConnect when the option is checked.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ConnectionManager.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 21437
+Author: Svetlozar.Hadzhiev
+Date: Montag, 4. September 2017 14:29:49
+Message:
+Removed not neadable properties of the gui components inserted at conversion process.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 21436
+Author: Svetlozar.Hadzhiev
+Date: Montag, 4. September 2017 14:11:03
+Message:
+Create ConnectionManager class to put connections stuffs and request to the StorageSystem extern.
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ConnectionManager.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+
+Revision: 21397
+Author: Svetlozar.Hadzhiev
+Date: Freitag, 1. September 2017 12:16:04
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMain.cs
+
+Revision: 21383
+Author: Svetlozar.Hadzhiev
+Date: Donnerstag, 31. August 2017 19:23:33
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMain.cs
+
+Revision: 21382
+Author: Svetlozar.Hadzhiev
+Date: Donnerstag, 31. August 2017 19:22:31
+Message:
+Feature #23070 Update to store settings (Input).
+Removed functionality for autoset "Allow only articles from Artricles.csv" 
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+
+Revision: 21371
+Author: Svetlozar.Hadzhiev
+Date: Donnerstag, 31. August 2017 15:03:29
+Message:
+Feature #23070 Implemented Auto set Allow Only Articles From Article.csv to be set if Articles.csv exist.
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMain.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator.sln
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+
+Revision: 21370
+Author: Svetlozar.Hadzhiev
+Date: Donnerstag, 31. August 2017 14:59:58
+Message:
+Feature #23070 Implemented Auto set Allow Only Articles From Article.csv to be set if Articles.csv exist.
+----
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/InputArticleList.cs
+
+Revision: 21365
+Author: Svetlozar.Hadzhiev
+Date: Donnerstag, 31. August 2017 12:02:54
+Message:
+Error #25336. Corrected indexing to be on ScanCode not the Article Id.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/InputArticleList.cs
+
+Revision: 21349
+Author: sebastien.feltz
+Date: Mittwoch, 30. August 2017 11:19:38
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Fix StorageSystem connection. It was using the digital shelf IP and port...
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 20859
+Author: sebastien.feltz
+Date: Freitag, 28. Juli 2017 17:21:01
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Release 1.0.29
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/Properties/AssemblyInfo.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/StorageSystem.dll
+
+Revision: 20846
+Author: sebastien.feltz
+Date: Donnerstag, 27. Juli 2017 11:08:45
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- DigitalShelf: update article information to be able to set Article information (Name, dosage form, packaging Unit, Max sub item quantity) manually if needed.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 20838
+Author: sebastien.feltz
+Date: Mittwoch, 26. Juli 2017 17:37:38
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- DigitalShelf: set default values to all digital shelf request.
+- update storage system Lib.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 20786
+Author: sebastien.feltz
+Date: Freitag, 21. Juli 2017 16:57:49
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Revert to r19856 + r20067
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator.sln
+
+Revision: 20785
+Author: sebastien.feltz
+Date: Freitag, 21. Juli 2017 16:48:01
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- remove FMain.cs, preparation to revert file name change. seam to confuse svn.
+----
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMain.cs
+
+Revision: 20260
+Author: 10253080
+Date: Montag, 12. Juni 2017 14:18:17
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+
+Revision: 20259
+Author: Svetlozar.Hadzhiev
+Date: Montag, 12. Juni 2017 14:12:00
+Message:
+
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator.sln
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/StorageSystem.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/log4net.dll
+
+Revision: 20240
+Author: Svetlozar.Hadzhiev
+Date: Freitag, 9. Juni 2017 18:08:13
+Message:
+Fix for DigitalShelfs
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMain.cs
+
+Revision: 20236
+Author: Svetlozar.Hadzhiev
+Date: Freitag, 9. Juni 2017 16:14:27
+Message:
+It simulator changes for digital shelf
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMain.cs
+
+Revision: 20067
+Author: sebastien.feltz
+Date: Dienstag, 30. Mai 2017 11:20:11
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Fix UI for DigitalShelf to connect to proper Port and IP.
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs (Copy from path: /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs, Revision, 19934)
+
+Revision: 19950
+Author: Svetlozar.Hadzhiev
+Date: Donnerstag, 18. Mai 2017 08:47:59
+Message:
+
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMain.cs
+
+Revision: 19949
+Author: Svetlozar.Hadzhiev
+Date: Donnerstag, 18. Mai 2017 08:45:57
+Message:
+Update Digital Shelf stuff with possibility to enter Article and Price full infos, .. 
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Deleted : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+
+Revision: 19856
+Author: sebastien.feltz
+Date: Donnerstag, 11. Mai 2017 14:29:49
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Add VAT to price information.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 19855
+Author: sebastien.feltz
+Date: Donnerstag, 11. Mai 2017 14:29:16
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- StorageSystem.dll updated
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 18695
+Author: sebastien.feltz
+Date: Dienstag, 28. Februar 2017 14:38:35
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Fix HandleStockReturnInput to properly set Virtual article information.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 18613
+Author: sebastien.feltz
+Date: Mittwoch, 22. Februar 2017 15:57:57
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Digital Shelf fixes after testing.
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+
+Revision: 18612
+Author: sebastien.feltz
+Date: Mittwoch, 22. Februar 2017 15:57:10
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- StorageSystem.dll updated
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 18552
+Author: sebastien.feltz
+Date: Freitag, 17. Februar 2017 09:41:25
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Updated to simulate Digital Shelf (missing files)
+----
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.Designer.cs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.cs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FAddPriceInformation.resx
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FArticleId.Designer.cs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FArticleId.cs
+Added : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FArticleId.resx
+
+Revision: 18521
+Author: sebastien.feltz
+Date: Donnerstag, 16. Februar 2017 11:59:06
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- StorageSystem.dll updated
+- Updated to simulate Digital Shelf
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/ITSystemSimulator.csproj
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+
+Revision: 18474
+Author: sebastien.feltz
+Date: Freitag, 10. Februar 2017 16:44:17
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Update 'Input' page and 'Master Article' page to simulate Article tree
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.Designer.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/FMAin.resx
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/MasterArticleModel.cs
+
+Revision: 18473
+Author: sebastien.feltz
+Date: Freitag, 10. Februar 2017 16:37:01
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- StorageSystem.dll updated
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/log4net.dll
+
+Revision: 16140
+Author: marcus.neuendorf
+Date: Mittwoch, 7. September 2016 15:48:23
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Release 1.0.28
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+
+Revision: 16139
+Author: marcus.neuendorf
+Date: Mittwoch, 7. September 2016 15:46:03
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Input Handling of article list improved
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/InputArticleList.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 16099
+Author: marcus.neuendorf
+Date: Montag, 5. September 2016 11:48:51
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- Release 1.0.27
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.exe
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/ITSystemSimulator.pdb
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Release/StorageSystem.dll
+
+Revision: 16098
+Author: marcus.neuendorf
+Date: Montag, 5. September 2016 11:47:54
+Message:
+trunk/Projects/Mosaic/Tools/ITSystemSimulator:
+- StorageSystem.dll updated
+----
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/ITSystemSimulator/Properties/AssemblyInfo.cs
+Modified : /trunk/Projects/Mosaic/Tools/ITSystemSimulator/Libraries/StorageSystem.dll
+

@@ -1,0 +1,17 @@
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\ItSystem.Simulator.exe.config
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\ItSystem.Simulator.exe
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\ItSystem.Simulator.pdb
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\ItSystem.Simulator.csprojAssemblyReference.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.FAddPriceInformation.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.FAddShoppingCartItem.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.FArticleId.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.FBulkOrder.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.FMain.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.FOrder.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.FOrderItem.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\CareFusion.ITSystemSimulator.Properties.Resources.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\ItSystem.Simulator.csproj.GenerateResource.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\ItSystem.Simulator.csproj.CoreCompileInputs.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\ItSystem.Simulator.csproj.CopyComplete
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\ItSystem.Simulator.exe
+C:\BuildAgent\work\9e174dd6f346b4b5\src\ItSystem.Simulator\obj\Release\ItSystem.Simulator.pdb

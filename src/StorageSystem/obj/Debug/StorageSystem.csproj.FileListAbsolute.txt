@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\MedquestSolution\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystem.dll
+C:\Users\Administrator\Desktop\MedquestSolution\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystem.pdb
+C:\Users\Administrator\Desktop\MedquestSolution\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\MedquestSolution\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\MedquestSolution\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.csproj.CopyComplete
+C:\Users\Administrator\Desktop\MedquestSolution\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.dll
+C:\Users\Administrator\Desktop\MedquestSolution\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.pdb
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystem.dll
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\StorageSystem.pdb
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.csprojAssemblyReference.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.csproj.CoreCompileInputs.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.csproj.CopyComplete
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.dll
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem\obj\Debug\StorageSystem.pdb

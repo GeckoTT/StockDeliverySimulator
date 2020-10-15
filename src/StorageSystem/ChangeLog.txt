@@ -1,0 +1,212 @@
+﻿==============================================================================================
+BD Rowa - WWKS2 (Storage System Library) 
+==============================================================================================
+
+Version 20-01
+----------------
+[Features]
+o SW-8278
+	- StorageSystemLib does not provide InputRequest ArticleId
+
+Version 2.0.0.25
+----------------
+[Fixes]
+o SW-5709
+	- Overload the methods SetPackInformation and SetArticleInformation with optional parameter SerialNumber.
+
+Version 2.0.0.24
+----------------
+[Fixes]
+o SW-5402
+	- According to the WWKS2 the ID of an InputRequest is a string. The WWKS2 models it as an int.
+	- Overload CreateInitiateInputRequest method and create new event PackInputFinishedEx in the case when Id is an int.
+
+o SW-5293
+	- Fix parsing of Unprocessed message.
+
+Version 2.0.0.23
+----------------
+[Fixes]
+
+o SW-4877
+	- "Finished" event is not raised for an order if an OutputMessage with state "Aborted" is received.
+
+o SW-4481 
+   - Add timeout of 10 seconds when calling SendAndWaitForResponse for State and ComponentStates of Storage System;
+   - Add extra log entries for the following classes: RowaStorageSystem, MessageDispatcher, MessageInterceptor.
+
+Version 2.0.0.22
+----------------
+[Features]
+
+o SW-4585, SW-4586, SW-4587
+	- Add tracking flags for SerialNumber, BatchNumber and ExpiryDate within ArticleMasterSetRequest.
+
+Version 2.0.0.21
+----------------
+[Fixes]
+
+o SW-4629
+   - WWKS2 Library and Simulator stop processing of output if intermediate message state is "InProcess".
+
+o ---
+   - Synchronized WWKS2 parser changes from Mosaic.
+
+Version 2.0.0.20
+----------------
+[Fixes]
+
+o SW-3845
+   - Storage system simulator hangs on processing of "UnprocessedMessage" notfication.
+
+o SW-3844
+   - Auto connect on the IT system simulator is not working.
+
+[Features]
+
+o SW-4223
+   - Support of new ADAS article info dialog.
+
+Version 2.0.0.19
+----------------
+[Fixes]
+
+o SW-3628, SW-3629: WWKS2 Lib stopps Output process if OutputMessage with unknown status is received.
+
+
+Version 2.0.0.18
+----------------
+[Fixes]
+
+o SW-3392: PackStored event does not provide IsNewDelivery flag of the pack
+	- temporary solution: created an extra event handler (PackStoredEventHandlerEx) that takes the bool IsNewDelivery parameter.
+
+Version 2.0.0.17
+----------------
+[Fixes]
+
+o SW-1776: Add "UnprocessedMessage" to WWKS2 protocol
+	- The UnprocessedMessage should not be answered.
+	- The Message element within UnprocessedMessage should have only the message text and no Id, Source, Destination.
+	- The UnprocessedMessage is set to "1" if the initial message has no Id set.
+
+o SW-3166:
+	- 'IsNewDelivery' flag is missing in IInputRequest interface.
+
+Version 2.0.0.16
+----------------
+[Features]
+o SW-2933:
+   - Add status "RejectedNoSerialNumber" to enum "InputHandling"
+
+[Fixes]
+o SW-2906:
+    -IT-System Simulator cannot load stock from robot (Load data bigger than 4194304 bytes(or 10 mb))
+
+
+Version 2.0.0.15
+----------------
+[Features]
+
+o SW-1776: Add "UnprocessedMessage" to WWKS2 protocol
+	- created new entities: UnprocessedMessage and Message type;
+    - extend Storage System interface with new method SendRawXml() to be used within Simulator;
+    - updated classes XmlObjectStream and XmlMessageStream to be as same as they are in Mosaic solution;
+	- updated Read() method within XmlMessageStream class to use ExtractMessage() method as in Mosaic;
+	- updated method GetIndexOf() from ByteArrayExtensions.
+
+o SW-2370: WWKS2: ADAS defines Article.RequiresFridge attribute for InputResponse
+	- extended SetArticleInformation method with the bool parameter requiresFridge
+
+[Fixes]
+
+o SW-2450: Unknown ComponentTypes in StorageSystem.dll (The component types ItSystem and PackConveyor used by Mosaic are not defined in the StorageSystem.dll).
+		   This leads to problems because type ItSystem that was send as string will be interpreted as ComponentType.StorageSystem (the default value).
+	- extended ComponentType enum with two new values PackConveyor and ItSystem.
+
+
+Version 2.0.0.14
+----------------
+[Fixes]
+
+o SW-1280
+    - VAT values are wronlgy treated as type "string". From now on VAT values are treated
+	  as "decimal".
+
+Version 2.0.0.13
+----------------
+[Features]
+o SW-1797
+	- Update Storage System Library to use Rowa Log 1.3.0.6
+	- When rejecting Shopping Cart Update Requests the Response will not contain the item rejected.
+
+o SW-293
+	- Update Storage System Library to use Rowa Log 1.3.0.3
+	- Replaced WwiFileLogger class with WwiLogIntercept class in order to use RowaLog (method GetWwi())
+
+Version 2.0.0.12
+----------------
+[Features]
+o SW-957
+	- Update Storage System Library to use Rowa Log 1.3.0.1
+
+Version 2.0.0.11
+----------------
+[Features]
+o SW-957
+	- Update Storage System Library to use Rowa Log 1.3.0.0
+
+Version 2.0.0.10
+----------------
+[Features]
+o SW-304
+	- Implement box released message  
+
+Version 2.0.0.9
+---------------
+[Features]
+
+o 27219
+	- Update Storage System Library to use Rowa Log 1.2.9.0
+
+[Fixes]
+
+o 27177
+   - Pack information is sent in 'StockInfoResponse', even if 'IncludePacks' attribute in
+     'StockInfoRequest' is set to 'false'.
+
+Version 2.0.0.8
+---------------
+[Fixes]
+
+o 27009
+   - Log manager proxy has been made thread safe. 
+
+Version 2.0.0.7
+---------------
+
+[Fixes]
+
+o 27009
+   - RowaLog is cleaned up twice, if a digital shelf and storage system objects are used at once.
+
+Version 2.0.0.6
+---------------
+
+[Fixes]
+
+o 26986
+   - RowaLog was not properly cleaned up. Can result in an application hanging.
+
+[Features]
+
+o 24032
+   - The subscriber id is now configurable. The default value is still 100.
+
+Version 2.0.0.5
+---------------
+
+[Fixes]
+
+o 26727
+   - NullPointerException, if no pack information is contained in stock info response.

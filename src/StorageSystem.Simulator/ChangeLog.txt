@@ -1,0 +1,98 @@
+﻿==============================================================================================
+BD Rowa - Storage System Simulator
+==============================================================================================
+
+Version 20-01
+----------------
+[Fixes]
+o SW-8474
+	- Replace Storage System Simulator documentation version V0.6 with V0.9
+
+Version 2.0.0.51
+------------------------
+[Fixes]
+
+o SW-4460 
+	- WWKS2 StorageSystemSimulator does not give an error message if listening port is not available.
+
+Version 2.0.0.23
+------------------------
+[Fixes]
+
+o SW-5243 - WWKS2 StorageSystemSimulator throws exception if receiving InputResponse after sending InputRequest from RAW XML tab
+
+
+Version 2.0.10.0
+------------------------
+[Fixes]
+
+o SW-3503 - WWKS2 Storage System Simulator does not distribute OutputMessage to all connections
+
+Version 2.0.9.0
+------------------------
+[Fixes]
+
+o SW-2906 - IT-System Simulator cannot load stock from robot
+
+o SW-1776: Add "UnprocessedMessage" to WWKS2 protocol
+	- The Message element within UnprocessedMessage should have only the message text and no Id, Source, Destination.
+	- The UnprocessedMessage is set to "1" if the initial message has no Id set.
+
+Version 2.0.8.0
+------------------------
+[Features]
+
+o SW-2371: WWKS2: Unified attribute Pack.IsInFridge
+    - set the property IsInFridge within the classes InitiateInputMessage and InputMessage.
+
+o SW-2370: WWKS2: ADAS defines Article.RequiresFridge attribute for InputResponse
+	- set the RequiresFridge accordingly within InputResponse class.
+
+o SW-1894 - Added possibility to send raw xml message to IT System Simulator.
+
+[Fixes]
+
+Version 2.0.7.0
+------------------------
+
+[Fixes]
+
+o SW-1818 - IT-System Simulator returns empty Article.Id in OutputMessage if requested item is not in simulator stock.
+
+
+Version 2.0.6.0
+------------------------
+
+[Fixes]
+
+o ---
+   - Fixed: Missing Artcile Id from OutputMessage (SW-925)
+
+   - Fixed: WWKS2 Simulator does not construct OutputResponse properly (missing ArticleId).
+   
+   - Fixed: WWKS2 Simulator duplicates packs if InputRequest contains two lines.
+      
+   - Fixed: WWKS2 Simulator KeepAlive Settings requires to restart connection.
+
+   - Fixed: WWKS2 Simulator - the set of the ID for Request, Response, Message (previously it was set always to be "1", changed to be increased by 1)
+
+
+Version 2.0.5.0
+------------------------
+
+[Fixes]
+
+o ---
+   - Fixed the WWKS2 Simulator Output on "According to Stock" mode. It always returned Incomplete.
+   
+   - Fixed the WWKS2 Simulator issue when processing StockInfoRequest with article code as criteria.
+
+
+Version 2.0.4.0
+------------------------
+
+[Fixes]
+
+o ---
+   - Fixed the layout for the main window of Storage System Simulator.
+

@@ -1,0 +1,8 @@
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\MosaicDependency.dll.config
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\MosaicDependency.dll
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\bin\AnyCPU\Debug\MosaicDependency.pdb
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.MosaicDependency\obj\Debug\StorageSystem.MosaicDependency.csprojAssemblyReference.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.MosaicDependency\obj\Debug\StorageSystem.MosaicDependency.csproj.CoreCompileInputs.cache
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.MosaicDependency\obj\Debug\StorageSystem.MosaicDependency.csproj.CopyComplete
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.MosaicDependency\obj\Debug\MosaicDependency.dll
+C:\Test\Assignment\StockDeliverySimulator Solution - Edit Here\src\StorageSystem.MosaicDependency\obj\Debug\MosaicDependency.pdb

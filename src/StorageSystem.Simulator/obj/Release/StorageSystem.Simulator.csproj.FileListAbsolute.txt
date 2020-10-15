@@ -1,0 +1,13 @@
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\StorageSystemSimulator.exe.config
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\StorageSystemSimulator.exe
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\StorageSystemSimulator.pdb
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystem.Simulator.csprojAssemblyReference.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystemSimulator.AddStatusComponent.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystemSimulator.FormMain.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystemSimulator.FormSelectPackShape.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystemSimulator.Properties.Resources.resources
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystem.Simulator.csproj.GenerateResource.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystem.Simulator.csproj.CoreCompileInputs.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystem.Simulator.csproj.CopyComplete
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystemSimulator.exe
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.Simulator\obj\Release\StorageSystemSimulator.pdb

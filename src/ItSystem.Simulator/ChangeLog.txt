@@ -1,0 +1,49 @@
+﻿==============================================================================================
+BD Rowa - IT System Simulator
+==============================================================================================
+Version 2.0.0.25
+------------------------
+[Fixes]
+
+o SW-6938
+	- ITSystemSimulator does not reply with Allowed for Fridge
+
+Version 2.0.0.24
+------------------------
+[Features]
+
+o SW-5292
+   - The IT System Simulator to supports the handling type "RejectedNoSerialNumber" of the
+     Input Request message.
+
+Version 1.0.32.0
+------------------------
+[Features]
+
+o SW-2370: WWKS2: ADAS defines Article.RequiresFridge attribute for InputResponse
+	- call method SetArticleInformation using the bool parameter requiresFridge set according to the check box Allow Input Only For Fridge
+
+o SW-1894: Add possibility to send raw XML in simulators
+    - created a new tab called Raw XML and add the functionality to send messages to Mosaic through Storage System lib. 
+
+
+Version 1.0.31.0
+------------------------
+[Features]
+
+o SW-304
+   - Show the boxes released for every order (the gridview is updated every time a box gets released).
+
+[Fixes]
+
+o SW-1797
+   - Articles from rejected shopping cart update requests will not appear anymore on it system simulator.
+
+o SW-1530
+   - Assign an id when creating a shopping cart.
+
+o 27009
+   - Application crashes on closing.
+
+o 26986
+   - Application is still running in background after closing the application window.

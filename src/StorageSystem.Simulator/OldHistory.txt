@@ -1,0 +1,1756 @@
+Revision: 28144
+Author: thomas.reth
+Date: Donnerstag, 10. Januar 2019 16:24:28
+Message:
+o Fixed Rowa Log NuGet package.
+
+----
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystem.Simulator/packages.config
+
+Revision: 28142
+Author: thomas.reth
+Date: Donnerstag, 10. Januar 2019 16:22:49
+Message:
+o Missing Rowa Log package added.
+----
+Added : /trunk/Projects/StorageSystemSimulator/packages/RowaLog.1.4.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/RowaLog.1.4.0/RowaLog.1.4.0.nupkg
+Added : /trunk/Projects/StorageSystemSimulator/packages/RowaLog.1.4.0/lib
+Added : /trunk/Projects/StorageSystemSimulator/packages/RowaLog.1.4.0/lib/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/RowaLog.1.4.0/lib/net40/RowaLog.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/RowaLog.1.4.0/lib/netstandard2.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/RowaLog.1.4.0/lib/netstandard2.0/RowaLog.dll
+
+Revision: 28136
+Author: thomas.reth
+Date: Donnerstag, 10. Januar 2019 15:12:15
+Message:
+o Renamed: Solution file and source folder
+----
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystem.Simulator (Copy from path: /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator, Revision, 28135)
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystem.Simulator/StorageSystem.Simulator.csproj (Copy from path: /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj, Revision, 28134)
+Deleted : /trunk/Projects/StorageSystemSimulator/StorageSystem.Simulator/StorageSystemSimulator.csproj
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystem.Simulator.sln (Copy from path: /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator.sln, Revision, 28135)
+Deleted : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator
+Deleted : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator.sln
+
+Revision: 28135
+Author: thomas.reth
+Date: Donnerstag, 10. Januar 2019 15:07:35
+Message:
+o PLC libraries removed.
+----
+Deleted : /trunk/Projects/StorageSystemSimulator/Libraries
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+
+Revision: 28134
+Author: thomas.reth
+Date: Donnerstag, 10. Januar 2019 15:05:07
+Message:
+o PlcHandlerNet.dll removed
+----
+Deleted : /trunk/Projects/StorageSystemSimulator/Libraries/PlcHandlerNet.dll
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+
+Revision: 28133
+Author: thomas.reth
+Date: Donnerstag, 10. Januar 2019 15:02:28
+Message:
+o RowaLog added as NuGet package
+----
+Deleted : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+Deleted : /trunk/Projects/StorageSystemSimulator/Libraries/System.Data.SQLite.dll
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/packages.config
+Deleted : /trunk/Projects/StorageSystemSimulator/Release
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+Added : /trunk/Projects/StorageSystemSimulator/packages
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/.signature.p7s
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/EntityFramework.6.2.0.nupkg
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/content
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/content/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/content/net40/App.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/content/net40/Web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net40/EntityFramework.SqlServer.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net40/EntityFramework.SqlServer.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net40/EntityFramework.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net40/EntityFramework.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net45/EntityFramework.SqlServer.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net45/EntityFramework.SqlServer.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net45/EntityFramework.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/lib/net45/EntityFramework.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/EntityFramework.PowerShell.Utility.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/EntityFramework.PowerShell.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/EntityFramework.psd1
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/EntityFramework.psm1
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/about_EntityFramework.help.txt
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/init.ps1
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/install.ps1
+Added : /trunk/Projects/StorageSystemSimulator/packages/EntityFramework.6.2.0/tools/migrate.exe
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.1.0.109.2
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.1.0.109.2/.signature.p7s
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.1.0.109.2/System.Data.SQLite.1.0.109.2.nupkg
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/.signature.p7s
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/System.Data.SQLite.Core.1.0.109.2.nupkg
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net20
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net20/System.Data.SQLite.Core.targets
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net20/x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net20/x64/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net20/x86
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net20/x86/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net40/System.Data.SQLite.Core.targets
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net40/x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net40/x64/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net40/x86
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net40/x86/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net45/System.Data.SQLite.Core.targets
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net45/x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net45/x64/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net45/x86
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net45/x86/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net451
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net451/System.Data.SQLite.Core.targets
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net451/x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net451/x64/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net451/x86
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net451/x86/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net46
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net46/System.Data.SQLite.Core.targets
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net46/x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net46/x64/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net46/x86
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/build/net46/x86/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net20
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net20/System.Data.SQLite.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net20/System.Data.SQLite.dll.config
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net20/System.Data.SQLite.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net40/System.Data.SQLite.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net40/System.Data.SQLite.dll.config
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net40/System.Data.SQLite.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net45/System.Data.SQLite.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net45/System.Data.SQLite.dll.config
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net45/System.Data.SQLite.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net451
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net451/System.Data.SQLite.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net451/System.Data.SQLite.dll.config
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net451/System.Data.SQLite.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net46
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net46/System.Data.SQLite.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net46/System.Data.SQLite.dll.config
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/net46/System.Data.SQLite.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/netstandard2.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/netstandard2.0/System.Data.SQLite.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/netstandard2.0/System.Data.SQLite.dll.config
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/lib/netstandard2.0/System.Data.SQLite.xml
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/linux-x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/linux-x64/native
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/linux-x64/native/netstandard2.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/linux-x64/native/netstandard2.0/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/osx-x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/osx-x64/native
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/osx-x64/native/netstandard2.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/osx-x64/native/netstandard2.0/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x64
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x64/native
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x64/native/netstandard2.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x86
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x86/native
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x86/native/netstandard2.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Core.1.0.109.2/runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/.signature.p7s
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/System.Data.SQLite.EF6.1.0.109.0.nupkg
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net40/app.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net40/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net40/web.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net40/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net45/app.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net45/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net45/web.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net45/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net451
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net451/app.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net451/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net451/web.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net451/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net46
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net46/app.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net46/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net46/web.config.install.xdt
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/content/net46/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net40/System.Data.SQLite.EF6.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net45/System.Data.SQLite.EF6.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net451
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net451/System.Data.SQLite.EF6.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net46
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/lib/net46/System.Data.SQLite.EF6.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net40/install.ps1
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net45/install.ps1
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net451
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net451/install.ps1
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net46
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.EF6.1.0.109.0/tools/net46/install.ps1
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/.signature.p7s
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/System.Data.SQLite.Linq.1.0.109.0.nupkg
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net20
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net20/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net20/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net40/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net40/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net45/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net45/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net451
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net451/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net451/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net46
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net46/app.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/content/net46/web.config.transform
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net20
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net20/System.Data.SQLite.Linq.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net40
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net40/System.Data.SQLite.Linq.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net45
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net45/System.Data.SQLite.Linq.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net451
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net451/System.Data.SQLite.Linq.dll
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net46
+Added : /trunk/Projects/StorageSystemSimulator/packages/System.Data.SQLite.Linq.1.0.109.0/lib/net46/System.Data.SQLite.Linq.dll
+
+Revision: 28132
+Author: thomas.reth
+Date: Donnerstag, 10. Januar 2019 14:53:28
+Message:
+o Updated SQLite to version 1.0.109.2
+
+----
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/App.config
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/packages.config
+
+Revision: 28105
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 8. Januar 2019 16:35:30
+Message:
+SW-3503: New release
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 28104
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 8. Januar 2019 16:32:19
+Message:
+SW-3503: WWKS2 Storage System Simulator does not distribute OutputMessage to all connections
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 27910
+Author: calin.dumitru.cerghizan
+Date: Freitag, 14. Dezember 2018 10:00:39
+Message:
+Commit New Release
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 27908
+Author: calin.dumitru.cerghizan
+Date: Freitag, 14. Dezember 2018 09:59:19
+Message:
+Updated the RowaLog.dll to version 1.4.0.0
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+
+Revision: 27795
+Author: thomas.reth
+Date: Freitag, 7. Dezember 2018 11:53:54
+Message:
+- Fixed bug of dealing with messages larger than the default buffer size.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlMessageStream.cs
+
+Revision: 27785
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 6. Dezember 2018 12:19:04
+Message:
+SW-1776: Add "UnprocessedMessage" to WWKS2 protocol
+	- The Message element within UnprocessedMessage should have only the message text and no Id, Source, Destination.
+	- The UnprocessedMessage is set to "1" if the initial message has no Id set.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Utils.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Unprocessed/UnprocessedMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Message.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+
+Revision: 27342
+Author: sebastien.feltz
+Date: Montag, 12. November 2018 15:46:46
+Message:
+StorageSystemSimulator:
+- SW-3004: implement logic to dispense full pack when insufficient open pack stock.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+
+Revision: 27336
+Author: tabriz.atayi@bd.com
+Date: Montag, 12. November 2018 11:07:55
+Message:
+SW-2906: IT-System Simulator cannot load stock from robot
+
+   - ExtractMessage function assumed that every data in buffer contains _endCData.But only last buffer has _endCData. It was corrected.
+   - Read function was reading not all information.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlMessageStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 26504
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 11. September 2018 09:50:43
+Message:
+SW-2371: WWKS2: Unified attribute Pack.IsInFridge
+    - set the property IsInFridge within the classes InitiateInputMessage and InputMessage.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InitiateInputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+
+Revision: 26472
+Author: calin.dumitru.cerghizan
+Date: Freitag, 7. September 2018 10:52:10
+Message:
+SW-2370: WWKS2: ADAS defines Article.RequiresFridge attribute for InputResponse
+	- set the RequiresFridge accordingly within InputResponse class.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+
+Revision: 26246
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 22. August 2018 10:19:27
+Message:
+Get rid of C#7 is expression that supports pattern matching => causing build errors in TeamCity.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Message.cs
+
+Revision: 26243
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 22. August 2018 10:03:23
+Message:
+Get rid of C#7 feature for out parameters causing an error build on TeamCity
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Utils.cs
+
+Revision: 26235
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 21. August 2018 16:26:07
+Message:
+SW-1776 Updated the Release
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 26233
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 21. August 2018 16:12:39
+Message:
+SW-1776: Add UnprocessedMessage to WWKS2 protocol
+    - fixed the appearance of CDATA content within Message XML element.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Message.cs
+
+Revision: 26226
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 21. August 2018 15:16:02
+Message:
+SW-1894: Removed an obsolete try catch
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+
+Revision: 26222
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 21. August 2018 14:43:30
+Message:
+SW-1894: Add possibility to send raw XML in simulators
+    - created a new tab called Raw XML and add the functionality to send messages to IT System Simulator;
+    - created classes UnprocessedMessage and Message (type) and updated existing XmlObjectStream and XmlMessageStream classes in order to be as same in Storage System lib;
+    - created a new helper SimulatorRawXmlCore to be used for sending raw XML messages;
+    - updated change log file.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/ByteArrayExtensions.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Utils.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Unprocessed
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Unprocessed/UnprocessedMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Message.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverter.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverterStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlMessageStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlObjectStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Converters/IConverterStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/MessageType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Unprocessed
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Unprocessed/UnprocessedMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorRawXmlCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulatorCore.cs
+
+Revision: 25912
+Author: calin.dumitru.cerghizan
+Date: Montag, 30. Juli 2018 12:36:29
+Message:
+Updated Release folder
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 25911
+Author: calin.dumitru.cerghizan
+Date: Montag, 30. Juli 2018 12:34:35
+Message:
+Updated dlls RowaLog, MosaicDependency.dll
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 25908
+Author: calin.dumitru.cerghizan
+Date: Montag, 30. Juli 2018 11:28:21
+Message:
+SW-1818: Updated Release folder
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 25907
+Author: calin.dumitru.cerghizan
+Date: Montag, 30. Juli 2018 11:19:43
+Message:
+SW-1818: IT-System Simulator returns empty Article.Id in OutputMessage if requested item is not in simulator stock.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 24990
+Author: calin.dumitru.cerghizan
+Date: Freitag, 25. Mai 2018 13:50:19
+Message:
+SW-1094: Added property SerialNumber within the entities Article, Criteria and Pack for the future use.
+Added the flag UseExternalIdAsSerialNumber within WWKS Converter Configuration (settable from UI).
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Article.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Criteria.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Pack.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverterConfiguration.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulatorCore.cs
+
+Revision: 24923
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 22. Mai 2018 11:00:51
+Message:
+SW-293 Updated RowaLog.dll (to the latest version) within Storage System Simulator
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24531
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 24. April 2018 09:17:04
+Message:
+SW-957: Commit new release of StorageSystemSimulator after updating the RowaLog from 1.3.0.0 to 1.3.0.1
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24523
+Author: calin.dumitru.cerghizan
+Date: Montag, 23. April 2018 15:47:36
+Message:
+SW-957: Commit new release of StorageSystemSimulator after updating the RowaLog
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24522
+Author: calin.dumitru.cerghizan
+Date: Montag, 23. April 2018 15:38:44
+Message:
+SW-957: Updated Storage System Simulator to use Rowa Log 1.3.0.0
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/RowaLog.dll
+
+Revision: 24463
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 19. April 2018 10:34:54
+Message:
+SW-925: New Release after bug fixing: Missing Article Id from OutputMessage
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24462
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 19. April 2018 10:32:19
+Message:
+SW-925: Fixed: Missing Article Id from OutputMessage
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+
+Revision: 24357
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 11. April 2018 10:31:47
+Message:
+New Release(Changed Dock property from None to Fill for the ListView and RichTextBox from Log tab)
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24356
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 11. April 2018 10:30:34
+Message:
+Changed Dock property from None to Fill for the ListView and RichTextBox from Log tab
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+
+Revision: 24325
+Author: calin.dumitru.cerghizan
+Date: Montag, 9. April 2018 10:52:53
+Message:
+SW-712: WWKS2 Simulator - commit the new Release with the changes made.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24324
+Author: calin.dumitru.cerghizan
+Date: Montag, 9. April 2018 10:50:37
+Message:
+SW-712: WWKS2 Simulator - updated the ChangeLog.txt
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+
+Revision: 24323
+Author: calin.dumitru.cerghizan
+Date: Montag, 9. April 2018 10:47:16
+Message:
+SW-712: WWKS2 Simulator - fixed the set of the ID for Request, Response, Message (previously it was set always to be "1", changed to be increased by 1)
+
+----
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/MessageId.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorInputCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockInfoCore.cs
+
+Revision: 24242
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 4. April 2018 13:29:00
+Message:
+SW-683: updated ChangeLog.txt
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+
+Revision: 24241
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 4. April 2018 13:06:47
+Message:
+SW-683: Commit with the new release containing changes made.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24240
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 4. April 2018 13:05:13
+Message:
+SW-683: Changed Assembly and File version from 2.0.5.0 to 2.0.6.0
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 24239
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 4. April 2018 13:00:10
+Message:
+SW-683: Enabling KeepAlive or changing Interval or Timeout stops and re listen with the new values automatically
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.resx
+
+Revision: 24237
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 4. April 2018 11:32:56
+Message:
+SW-680: Fixed the duplication of same article within InputMessage if the InputRequest contains two packs.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputMessage.cs
+
+Revision: 24234
+Author: calin.dumitru.cerghizan
+Date: Mittwoch, 4. April 2018 10:35:01
+Message:
+SW-678: Set the ArticleId whitin the Criteria of OutputResponse
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputResponse.cs
+
+Revision: 24219
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 3. April 2018 10:25:29
+Message:
+Commit the Release on StorageSystemSimulator
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 24107
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 22. März 2018 12:09:05
+Message:
+SW-427: Fixed the WWKS2 Simulator issue when processing StockInfoRequest with article code as criteria.
+Use PISArticleCode when RobotArticleCode is null or empty string.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockInfoCore.cs
+
+Revision: 24100
+Author: calin.dumitru.cerghizan
+Date: Donnerstag, 22. März 2018 10:55:21
+Message:
+SW-412: Fixed the WWKS2 Simulator Output on "According to Stock" mode. It always returned Incomplete.
+The stock was retrieved using RobotArticleCode which in this case was empty string. Changed to use PISArticleCode.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 23919
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 13. März 2018 11:56:45
+Message:
+#27219: Commit changes on Release folder after building new release (ITSystemSimulator)
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 23918
+Author: calin.dumitru.cerghizan
+Date: Dienstag, 13. März 2018 11:54:06
+Message:
+#27219: Updated Libraries folder (StorageSystemSimulator) with updated RowaLog.dll (1.2.9.0)
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+
+Revision: 23850
+Author: thomas.reth
+Date: Freitag, 9. März 2018 09:57:12
+Message:
+Change log created.
+
+----
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/ChaneLog.txt
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+
+Revision: 23753
+Author: calin.dumitru.cerghizan
+Date: Montag, 5. März 2018 15:21:00
+Message:
+Fixed the layout for the main window of Storage System Simulator (increased Panel 1 minimum size from 190 to 250 pixels)
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+
+Revision: 23751
+Author: calin.dumitru.cerghizan
+Date: Montag, 5. März 2018 14:39:01
+Message:
+#21897: Updated binary files
+----
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+
+Revision: 23749
+Author: calin.dumitru.cerghizan
+Date: Montag, 5. März 2018 14:34:29
+Message:
+Changed the assembly version from 2.0.3.0 to 2.0.4.0
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 23739
+Author: calin.dumitru.cerghizan
+Date: Montag, 5. März 2018 13:15:50
+Message:
+#21897: When creating a new instance of StockInputMessage within SendInputMessage method the IsNewDelivery property was set to the default False value. I set its value to the property IsDeliveryInput value from the StockInputResponse.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorInputCore.cs
+
+Revision: 23475
+Author: thomas.reth
+Date: Mittwoch, 14. Februar 2018 10:56:21
+Message:
+Cleanup
+----
+Deleted : /trunk/Projects/StorageSystemSimulator/Libraries/log4net.dll
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Modified : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+Deleted : /trunk/Projects/StorageSystemSimulator/Release/log4net.dll
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+
+Revision: 23233
+Author: sebastien.feltz
+Date: Montag, 29. Januar 2018 11:18:41
+Message:
+StorageSystemSimulator 2.0.3
++ commit release folder
+----
+Added : /trunk/Projects/StorageSystemSimulator/Release
+Added : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.dll
+Added : /trunk/Projects/StorageSystemSimulator/Release/MosaicDependency.pdb
+Added : /trunk/Projects/StorageSystemSimulator/Release/RowaLog.dll
+Added : /trunk/Projects/StorageSystemSimulator/Release/RowaLogConfig.xml
+Added : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.exe
+Added : /trunk/Projects/StorageSystemSimulator/Release/StorageSystemSimulator.pdb
+Added : /trunk/Projects/StorageSystemSimulator/Release/System.Data.SQLite.dll
+Added : /trunk/Projects/StorageSystemSimulator/Release/log4net.dll
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+
+Revision: 22378
+Author: sebastien.feltz
+Date: Dienstag, 14. November 2017 17:00:49
+Message:
+StorageSystemSimulator:
+- Fix Stock import.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemStock.cs
+
+Revision: 21358
+Author: Svetlozar.Hadzhiev
+Date: Mittwoch, 30. August 2017 16:41:31
+Message:
+Error #25120 correct serialize, exclude Interface definitions
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/Article.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/PisArticle.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/PisArticleScanCode.cs
+
+Revision: 19876
+Author: sebastien.feltz
+Date: Freitag, 12. Mai 2017 15:10:08
+Message:
+StorageSystemSimulator:
+- Fix Outputs / direct outputs.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+
+Revision: 19055
+Author: sebastien.feltz
+Date: Montag, 27. März 2017 15:07:55
+Message:
+StorageSystemSimulator:
+- Update to build with latest Mosaic dependency.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorArticleMasterSetCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorInputCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockInfoCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemArticle.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemStock.cs
+
+Revision: 19054
+Author: sebastien.feltz
+Date: Montag, 27. März 2017 15:06:04
+Message:
+StorageSystemSimulator:
+- Simplify Mosaic dependency
+----
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/PackConveyorManager.cs
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrder.cs
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/VideoCapture
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor
+
+Revision: 18700
+Author: sebastien.feltz
+Date: Dienstag, 28. Februar 2017 17:19:26
+Message:
+StorageSystemSimulator:
+- Update Mosaic dependency to Mosaic r18695
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/StockQuery.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+
+Revision: 18677
+Author: sebastien.feltz
+Date: Montag, 27. Februar 2017 10:01:41
+Message:
+StorageSystemSimulator:
+- Update Mosaic dependency to Mosaic r18674
+----
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/ArticleInformation
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/ArticleInformation/ArticleInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/ArticleInformation/ArticleInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/ArticleInformation/ArticlePriceRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/ArticleInformation/ArticlePriceResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InitiateInputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InitiateInputRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InitiateInputResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Sales
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Sales/ArticleSelectedMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Sales/ShoppingCartRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Sales/ShoppingCartResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Sales/ShoppingCartUpdateMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Sales/ShoppingCartUpdateRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Sales/ShoppingCartUpdateResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/ArticleMasterSetRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Task/TaskInfoResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Article.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/PriceInformation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/ShoppingCart.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/ShoppingCartItem.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Tag.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/UpdateResult.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverter.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverterStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/SerialPortDevice.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/SerialUps.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/SystemUps.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandFilterNestedQuery.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandFilterPISArticlesAscLookup.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandFilterPISArticlesDescLookup.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandGroup.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandMultiFilter.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Database.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/DatabaseSet.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG12.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG17.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG18.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/H01-DatabaseSettings.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/H05-StockOutputOrders.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P01-DatabaseSettings.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P03-RobotArticles.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P04-RobotPacks.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P05-StockOutputOrders.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P09-PacksAndArticles.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P10-PISArticles.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P12-Outputs.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Framework.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBoxQueue.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IFillingPoint.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IFillingUnit.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Connectors/ConnectionCategory.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/ArticleInformation
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/ArticleInformation/ArticleInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/ArticleInformation/ArticleInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/ArticleInformation/ArticlePriceRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/ArticleInformation/ArticlePriceResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/InitiateStockInputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/InitiateStockInputRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/InitiateStockInputResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/MessageType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Sales
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Sales/ArticleSelectedMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Sales/ShoppingCartRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Sales/ShoppingCartResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Sales/ShoppingCartUpdateMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Sales/ShoppingCartUpdateRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Sales/ShoppingCartUpdateResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/ArticleInfoResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/ArticleMasterSetRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoCriteria.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/Article.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/ArticleTree.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/PisArticle.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/PisArticleAttribute.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/PisArticleScanCode.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration/Output.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrder.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItem.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItemPack.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Packs/Pack.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Packs/PackAndArticle.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Properties/AssemblyInfo.cs
+
+Revision: 17461
+Author: sebastien.feltz
+Date: Mittwoch, 30. November 2016 10:34:43
+Message:
+StorageSystemSimulator 2.0.2
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 17460
+Author: sebastien.feltz
+Date: Mittwoch, 30. November 2016 10:33:02
+Message:
+StorageSystemSimulator:
+- update so that StockLocationID is optional on input.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockLocation.cs
+
+Revision: 16619
+Author: sebastien.feltz
+Date: Dienstag, 11. Oktober 2016 16:53:54
+Message:
+Projects/Mosaic:
+- Updated to support StockInfoMessage.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockInfoCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.resx
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulatorCore.cs
+
+Revision: 16618
+Author: sebastien.feltz
+Date: Dienstag, 11. Oktober 2016 16:52:56
+Message:
+StorageSystemSimulator:
+- Update Mosaic dependency to Mosaic r16495 Fix to compile with simulator.
+----
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/RebootTracker.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Framework.cs
+
+Revision: 16584
+Author: sebastien.feltz
+Date: Freitag, 7. Oktober 2016 15:44:49
+Message:
+StorageSystemSimulator:
+- Update Mosaic dependency to Mosaic r16495
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/TextConverter.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverterStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/OrchestrationManager.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Framework.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBox.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IFillingPoint.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/MosaicMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/ArticleInfoResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor/BufferInfo.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/MasterArticle.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Input/StockDelivery.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItemPack.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/PackConveyor.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/PackConveyorError.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/ErrorSimulation.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/FPackConveyor.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/FPackConveyor.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/FPackConveyor.resx
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/PackConveyor.cs
+
+Revision: 14882
+Author: Sebastien.feltz
+Date: Dienstag, 31. Mai 2016 17:31:59
+Message:
+StorageSystemSimulator 2.0.1
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+
+Revision: 14881
+Author: Sebastien.feltz
+Date: Dienstag, 31. Mai 2016 17:25:24
+Message:
+StorageSystemSimulator:
+- UI: Allow expiry date to be null on input request.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.resx
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+
+Revision: 14880
+Author: Sebastien.feltz
+Date: Dienstag, 31. Mai 2016 17:05:20
+Message:
+StorageSystemSimulator:
+- Fix: restore teh WwiLogIntercept else the simulator can't display logs.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlMessageStream.cs
+
+Revision: 14582
+Author: Sebastien.feltz
+Date: Freitag, 29. April 2016 15:54:03
+Message:
+StorageSystemSimulator:
+- UI: Minor UI tweak.
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+
+Revision: 14581
+Author: Sebastien.feltz
+Date: Freitag, 29. April 2016 15:41:30
+Message:
+StorageSystemSimulator:
+- Implement single batch number simulation.
+- convert output order number to string.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+
+Revision: 14580
+Author: Sebastien.feltz
+Date: Freitag, 29. April 2016 15:39:21
+Message:
+StorageSystemSimulator:
+- Update Mosaic dependency to Mosaic r14554
+----
+Added : /trunk/Projects/StorageSystemSimulator/Libraries/BoxSystem.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/PackConveyor.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+Modified : /trunk/Projects/StorageSystemSimulator/Libraries/RowaPlc.dll
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/TypeConverter.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/MessageBase.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputMessage.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputResponse.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Criteria.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverterStream.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlMessageStream.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/ComponentManager.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/ConnectorManager.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/ConverterManager.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/OrchestrationManager.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/PackConveyorManager.cs
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/PlcConnection.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/WcfServiceManager.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/SerialPortDevice.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/SerialUps.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/SystemUps.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/UpsStatus.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Ups/UpsWorker.cs
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Logging/PlcInteractionLog.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Threading/AsyncEventProvider.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/DatabaseSet.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG11.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG16.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/H01-DatabaseSettings.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/H05-StockOutputOrders.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P01-DatabaseSettings.sql
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P05-StockOutputOrders.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/BoxStatus.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/Delegates.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBox.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBoxQueue.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBoxReservation.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBoxSystem.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBufferReservation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/ICheckIn.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/ICheckOut.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IFillingPoint.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IFillingUnit.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Legacy
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Legacy/CommandRequest.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/MosaicMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor/BufferInfo.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor/BufferType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor/Delegates.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor/IPackConveyorExtended.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/PackConveyor/TransportOrder.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Gui
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Gui/Component.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrder.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItem.cs
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/BufferConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/BufferOutputMapping.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/PackConveyor.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/PackConveyorConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/PackConveyorError.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/ErrorSimulation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/FPackConveyor.Designer.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/FPackConveyor.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/FPackConveyor.resx
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/PackConveyor/Simulation/PackConveyor.cs
+Deleted : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc
+
+Revision: 14425
+Author: marcus.neuendorf
+Date: Donnerstag, 21. April 2016 14:09:18
+Message:
+Projects/StorageSystemSimulator:
+- Some further Resizing added
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+
+Revision: 14416
+Author: Sebastien.feltz
+Date: Donnerstag, 21. April 2016 09:41:16
+Message:
+StorageSystemSimulator:
+- UI: auto resize columns.
+- UI: ensure the last log is display.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+
+Revision: 14415
+Author: Sebastien.feltz
+Date: Donnerstag, 21. April 2016 08:44:41
+Message:
+StorageSystemSimulator:
+- Add log4net.dll to the library
+----
+Added : /trunk/Projects/StorageSystemSimulator/Libraries/log4net.dll
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+
+Revision: 14411
+Author: Sebastien.feltz
+Date: Mittwoch, 20. April 2016 18:22:30
+Message:
+StorageSystemSimulator:
+- Setup assembly information and version number.
+- Stock: allow to load the stock from a V-Max stock export csv.
+- Log: enable Rowa logs to C:\ProgramData\Rowa\Logs\Wwks2SDK\StorageSystemSimulator
+- UI: More updates.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.resx
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Program.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/Resources.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/RowaLogConfig.xml
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemArticle.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulatorCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemStock.cs
+
+Revision: 14373
+Author: Sebastien.feltz
+Date: Dienstag, 19. April 2016 17:39:55
+Message:
+StorageSystemSimulator:
+- Tenant: update to display [Tenant ID] Tenant Description
+- Stock Location: update to display [Location ID] Location Description
+- UI Log: inversed to display newest at the bottom.
+- UI: various updates.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockLocation.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorTenant.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.resx
+
+Revision: 14372
+Author: Sebastien.feltz
+Date: Dienstag, 19. April 2016 17:21:47
+Message:
+StorageSystemSimulator:
+- Output: set a default expiry date to outputted packs ('always complete' mode)
+- Output: update task information and cancel the affect the latest order with the requested ID (and not the first one).
+
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+
+Revision: 14360
+Author: Sebastien.feltz
+Date: Dienstag, 19. April 2016 11:31:36
+Message:
+StorageSystemSimulator:
+- update libraries reference.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+
+Revision: 14359
+Author: Sebastien.feltz
+Date: Dienstag, 19. April 2016 11:28:58
+Message:
+StorageSystemSimulator:
+- Copy libraries from Mosaic project.
+
+----
+Added : /trunk/Projects/StorageSystemSimulator/Libraries
+Added : /trunk/Projects/StorageSystemSimulator/Libraries/PackConveyor.dll
+Added : /trunk/Projects/StorageSystemSimulator/Libraries/PlcHandlerNet.dll
+Added : /trunk/Projects/StorageSystemSimulator/Libraries/RowaLog.dll
+Added : /trunk/Projects/StorageSystemSimulator/Libraries/RowaPlc.dll
+Added : /trunk/Projects/StorageSystemSimulator/Libraries/System.Data.SQLite.dll
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/CareFusionLogo.ico
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+
+Revision: 14305
+Author: Sebastien.feltz
+Date: Donnerstag, 14. April 2016 17:36:00
+Message:
+StorageSystemSimulator:
+- change first pack ID to 1 instead of 0.
+- add button to deleted saved state.
+- new option in output to generate Box id.
+- add CareFusion icon.
+----
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/AddStatusComponent.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/AddStatusComponent.resx
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.resx
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Image
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Image/CareFusionLogo.ico
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSerializer.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulatorCore.cs
+Modified : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemStock.cs
+
+Revision: 14137
+Author: Sebastien.feltz
+Date: Donnerstag, 7. April 2016 10:39:25
+Message:
+StorageSystemSimulator:
+- add StorageSystemSimulator
+----
+Modified : /trunk/Projects/StorageSystemSimulator
+Deleted : /trunk/Projects/StorageSystemSimulator/Dummy.txt
+Modified : /trunk/Projects/StorageSystemSimulator/MosaicDependency
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/AddStatusComponent.Designer.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/AddStatusComponent.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/AddStatusComponent.resx
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/App.config
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorArticleMasterSetCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorInputCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorOutputCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStatusCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockDeliverySetCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockInfoCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorStockLocation.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorTaskInfoCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Cores/SimulatorTenant.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.Designer.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormMain.resx
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormSelectPackShape.Designer.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormSelectPackShape.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/FormSelectPackShape.resx
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Program.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/AssemblyInfo.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/Resources.Designer.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/Resources.resx
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/Settings.Designer.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/Properties/Settings.settings
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/RowaLogConfig.xml
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemArticle.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSerializer.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulator.csproj
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemSimulatorCore.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/StorageSystemStock.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator/WwiLogger.cs
+Added : /trunk/Projects/StorageSystemSimulator/StorageSystemSimulator.sln
+
+Revision: 14134
+Author: Sebastien.feltz
+Date: Donnerstag, 7. April 2016 10:10:07
+Message:
+StorageSystemSimulator:
+- add MosaicDependency
+----
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Components
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Components/ComponentType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Components/IComponent.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Components/IComponentConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Connectors
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Connectors/Tcp
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Connectors/Tcp/TcpConnection.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Connectors/Tcp/TcpInConnector.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Connectors/Tcp/TcpInConnectorConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Connectors/Tcp/TcpOutConnector.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Connectors/Tcp/TcpOutConnectorConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/ByteArrayExtensions.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/IMessageConversion.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/TextConverter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/TypeConverter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Configuration
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Configuration/ConfigurationGetRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Configuration/ConfigurationGetResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/EnvelopeBase.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Hello
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Hello/HelloRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Hello/HelloResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InitiateInputMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InitiateInputRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InitiateInputResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Input/InputResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/KeepAlive
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/KeepAlive/KeepAliveRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/KeepAlive/KeepAliveResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/MessageBase.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Output/OutputResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Status
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Status/StatusRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Status/StatusResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/ArticleMasterSetRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/ArticleMasterSetResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockDeliverySetRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockDeliverySetResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockLocationInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Stock/StockLocationInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Task
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Task/TaskCancelRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Task/TaskCancelResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Task/TaskInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Messages/Task/TaskInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Article.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Box.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Capability.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Component.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Criteria.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Details.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Error.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Handling.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Label.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Pack.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/PackState.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/SetResult.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/StockDelivery.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/StockLocation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Subscriber.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/Types/Task.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverterConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/Wwks.2/WwksConverterStream.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlMessageStream.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Convertors/XmlObjectStream.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/ComponentLoader.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/PackConveyorManager.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/PlcConnection.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Components/TaskScheduler.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Environment/Directories.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Logging
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Logging/ApplicationLog.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Logging/LogExtensions.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Logging/PlcInteractionLog.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Threading
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Threading/AsyncEventProvider.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Core/Threading/AsyncMethodCall.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandFilter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandGroup.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/CommandParameter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/ComparisonType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/ConcatenationType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Database.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/DatabaseCaseInsensitiveCollation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/DatabaseLock.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/DatabaseSet.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG10.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG2.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG3.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG4.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG5.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG6.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG7.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG8.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/HMIG9.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG10.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG11.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG12.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG13.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG14.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG15.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG2.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG3.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG4.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG5.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG6.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG7.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG8.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/PMIG9.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Migration/SMIG1.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/OrderingType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/QueryGroupFilter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/QueryLimitationFilter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/QueryOffsetFilter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/QueryOrderingFilter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/H01-DatabaseSettings.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/H05-StockOutputOrders.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/H06-StockDelivery.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P01-DatabaseSettings.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P02-Components.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P03-Articles.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P04-Packs.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P05-StockOutputOrders.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P06-StockDelivery.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P07-Tenants.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P08-StockLocations.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P09-PacksAndArticles.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P10-MasterArticles.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/P11-ArticleMaxSubItemQuantity.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/S01-DatabaseSettings.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/Schema/S02-GuiDataModel.sql
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/DB/StockQuery.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Framework.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/InstallUtil.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBoxSystem.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IBufferReservation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/BoxSystem/IFillingUnit.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Connectors
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Connectors/ConnectionCategory.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Connectors/IConnection.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Connectors/IConnector.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Connectors/IInboundConnector.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Connectors/IOutboundConnector.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Converters
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Converters/IConverter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Converters/IConverterStream.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration/ConfigurationGetRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration/ConfigurationGetResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration/ConveyorConfigGetRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration/ConveyorConfigGetResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration/InputConfigurationMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration/InputConfigurationRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Configuration/InputConfigurationResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/EndStockDeliveryRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/InitiateStockInputMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/InitiateStockInputRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/InitiateStockInputResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/InitiateStockInputState.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StartEndStockDeliveryResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StartStockDeliveryRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputError.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputErrorType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputHandling.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputHandlingType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Input/StockInputResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/MessageType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/MosaicMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Output
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Output/StockOutputMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Output/StockOutputRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Output/StockOutputResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Print
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Print/LabelPrintMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Print/LabelPrintRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Print/LabelPrintResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Status
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Status/StatusComponent.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Status/StatusMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Status/StatusRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Status/StatusResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Status/StatusType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/ArticleInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/ArticleInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/ArticleMasterSetRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/ArticleMasterSetResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockDeliverySetRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockDeliverySetResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoCriteria.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockLocationInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Stock/StockLocationInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task/Task.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task/TaskCancelRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task/TaskCancelResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task/TaskInfoRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task/TaskInfoResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task/TaskState.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/Task/TaskType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemCommand.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemCommandResult.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemConfigRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemConfigResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemManualOrderMessage.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemOrderComplete.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemOrderRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemOrderResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemOutputDetail.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemPack.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemStatusRequest.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemStatusResponse.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Messages/TransportSystem/TransportSystemTransferPointStatus.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/AlarmType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/BoxStatus.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/Delegates.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/IBox.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/IBoxQueue.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/IBoxReservation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/ICheckIn.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/ICheckOut.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/BoxSystem/IFillingPoint.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/ComponentStatus.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/Delegates.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/IError.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/IErrorProvider.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/PackConveyor
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/PackConveyor/BufferInfo.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/PackConveyor/BufferType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/PackConveyor/Delegates.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/PackConveyor/IPackConveyorExtended.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Plc/PackConveyor/TransportOrder.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Scheduler
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Scheduler/ISchedulerTask.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/Article.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/ArticleMaxSubItemQuantity.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/GuiArticle.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Articles/MasterArticle.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Components
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Components/Component.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Components/ConfigurationValue.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration/ConveyorSystem.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration/ConveyorType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration/HandoverPoint.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration/InputPoint.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration/InputSource.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Configuration/Output.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Database
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Database/IDatabaseType.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Input
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Input/StockDelivery.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Input/StockDeliveryItem.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Input/StockDeliveryItemPack.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Input/StockDeliveryPriority.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Input/StockDeliveryState.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrder.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItem.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItemLabel.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItemPack.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderItemPackLabelState.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Output/StockOutputOrderState.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Packs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Packs/GuiPack.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Packs/Pack.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Packs/PackAndArticle.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Packs/PackShape.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Stock
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Stock/StockLocation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/Types/Stock/Tenant.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/VideoCapture
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/VideoCapture/ICamera.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Interfaces/VideoCapture/ICaptureHost.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/MosaicDependency.csproj
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Native
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Native/Advapi32.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Native/Kernel32.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Native/Mpr.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Native/Shell32.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Native/User32.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem/Box.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem/BoxQueue.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem/BoxScanCode.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem/CheckIn.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem/CheckOut.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem/FillingPoint.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/BoxSystem/ScannerStatus.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/BoxSystemCheckIn.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/BoxSystemCheckOut.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/BoxSystemCommands.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/BoxSystemErrors.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/BoxSystemFillingPoint.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/BoxSystemProjectInfo.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/BoxSystemProofOfLife.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/Interfaces/PlcBase.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/BufferConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/BufferOutputMapping.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/PackConveyor.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/PackConveyorConfiguration.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/PackConveyorError.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/Simulation
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/Simulation/ErrorSimulation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/Simulation/FPackConveyor.Designer.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/Simulation/FPackConveyor.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/Simulation/FPackConveyor.resx
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PackConveyor/Simulation/PackConveyor.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcCommand.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcCommandHandler.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcCommandParameter.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcCommandResult.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcCommandSimulation.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcError.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcErrorHandler.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcErrorID.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcHandlerExtended.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcStatusHandler.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Plc/PlcTypeDetector.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Properties
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/Properties/AssemblyInfo.cs
+Added : /trunk/Projects/StorageSystemSimulator/MosaicDependency/WwiLogIntercept.cs
+
+Revision: 13989
+Author: Sebastien.feltz
+Date: Mittwoch, 30. März 2016 14:58:27
+Message:
+StorageSystemSimulator:
+ - Added to svn
+----
+Added : /trunk/Projects/StorageSystemSimulator
+Added : /trunk/Projects/StorageSystemSimulator/Dummy.txt
+

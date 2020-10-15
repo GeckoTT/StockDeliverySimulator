@@ -1,0 +1,8 @@
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\MosaicDependency.dll.config
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\MosaicDependency.dll
+C:\BuildAgent\work\9e174dd6f346b4b5\bin\AnyCPU\Release\MosaicDependency.pdb
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.MosaicDependency\obj\Release\StorageSystem.MosaicDependency.csprojAssemblyReference.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.MosaicDependency\obj\Release\StorageSystem.MosaicDependency.csproj.CoreCompileInputs.cache
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.MosaicDependency\obj\Release\StorageSystem.MosaicDependency.csproj.CopyComplete
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.MosaicDependency\obj\Release\MosaicDependency.dll
+C:\BuildAgent\work\9e174dd6f346b4b5\src\StorageSystem.MosaicDependency\obj\Release\MosaicDependency.pdb
